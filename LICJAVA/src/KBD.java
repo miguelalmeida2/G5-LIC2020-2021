@@ -46,8 +46,9 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
     public static char waitKey(long timeout) {
         long time = Time.getTimeInMillis();
         while (time - Time.getTimeInMillis() < timeout) {
-            getKey();
+            return getKey();
         }
+        return NONE;
     }
 }
 

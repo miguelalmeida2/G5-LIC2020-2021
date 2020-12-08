@@ -40,5 +40,3 @@ public class HAL { // Virtualiza o acesso ao sistema UsbPort
         UsbPort.out(~val);
     }
 }
-
-
