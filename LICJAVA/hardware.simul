@@ -1,0 +1,17 @@
+## --- Additional packages with Hardware to Simulator
+package isel.leic.simul
+
+UsbPort = UsbPort
+kbd  = Keyboard("123456789*0#",4,3,0)
+lcd  = LCD
+
+# keyboard
+kbd.val -> UsbPort.I4
+UsbPort.O7  -> kbd.ack
+kbd.K[0-3] -> UsbPort.I[0-3]
+1 -> kbd.oe
+
+# LCD
+UsbPort.O[0-3]  -> lcd.D[4-7]
+UsbPort.O4      -> lcd.rs
+UsbPort.O5      -> lcd.e

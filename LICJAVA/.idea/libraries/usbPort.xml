@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="usbPort">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/usbPort.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
