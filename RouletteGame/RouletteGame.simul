@@ -1,0 +1,79 @@
+## --- Additional packages with Hardware to Simulator
+package roulettegame.simul    # for Modules used in Roulette Game
+UsbPort = UsbPort
+
+# Generic modules to activate from Simulator
+kbd  = Keyboard("123456789*0#",4,3,0)
+lcd  = LCD
+m    = Switch ; "manut" ; setLabel("M")
+d7   = D7Seg
+
+# Costume modules from roulettegame package
+kb  = KeyBuffer
+sr = SerialReceiverParity(6)
+dp  = Dispatcher
+rds7 = RouletteDisplay
+ca = CoinAcceptor ; "Acceptor"
+
+## --- Project Links ---
+
+# --------------------------------------
+# KeyBoard Reader
+# --------------------------------------
+# KeyDecode
+1 -> kbd.oe
+kbd.K[0-3] -> kb.D[0-3]
+kbd.val -> kb.DAV
+kb.DAC -> kbd.ack
+
+# Key buffer
+kb.K[0-3] -> UsbPort.I[0-3]
+kb.Dval -> UsbPort.I4
+UsbPort.O7 -> kb.ACK
+
+# --------------------------------------
+# Serial Output Controller
+# --------------------------------------
+UsbPort.O3 -> sr.SS
+UsbPort.O1 -> sr.SDX
+UsbPort.O2-> sr.SCLK
+dp.done -> sr.accept
+
+# --------------------------------------
+# LCD
+# --------------------------------------
+dp.D[1-4] -> lcd.D[4-7]
+dp.D0 -> lcd.rs
+dp.WrL -> lcd.e
+sr.DXval -> dp.Dval
+sr.D[1-5] -> dp.I[0-4]
+sr.D0 -> dp.LnD
+
+# --------------------------------------
+# Roulette Display
+# --------------------------------------
+rds7.in[0-4] -> sr.D[1-5]
+rds7.wr -> dp.WrD
+0 -> rds7.ph
+
+# --------------------------------------
+# 7-segment Display
+# --------------------------------------
+d7.a -> rds7.dec0
+d7.b -> rds7.dec1
+d7.c -> rds7.dec2
+d7.d -> rds7.dec3
+d7.e -> rds7.dec4
+d7.f -> rds7.dec5
+d7.g -> rds7.dec6
+
+# --------------------------------------
+# Coin Acceptor
+# --------------------------------------
+UsbPort.O6 -> ca.accept
+ca.Coin -> UsbPort.I6
+
+# --------------------------------------
+# Manut
+# --------------------------------------
+m.out -> UsbPort.I7
