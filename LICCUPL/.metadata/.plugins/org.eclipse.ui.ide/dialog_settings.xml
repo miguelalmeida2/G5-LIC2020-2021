@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="org.eclipse.emf.common:2.18.0.v20191225-1014"/>
+		<item value="org.eclipse.emf.ecore:2.21.0.v20200127-1342"/>
+		<item value="org.eclipse.help:2.3.100.v20200305-0155"/>
+		<item value="org.eclipse.platform:4.15.0.v20200305-0155"/>
+		<item value="org.eclipse.rcp:4.15.0.v20200305-0155"/>
+	</list>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="C:\Users\tiago\Desktop\UNI\ISEL\3º Semestre\LIC\PROJETOS\Hardware\Key Buffer"/>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="ps.edu.cupl.ui.wizard.CuplTemplateNewProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="ps.edu.cupl.ui.category"/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\RouletteDisplay"/>
+		</list>
+	</section>
+</section>

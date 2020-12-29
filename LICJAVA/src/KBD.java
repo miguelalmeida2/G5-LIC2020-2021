@@ -39,6 +39,6 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
     }
 }
 
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         
-    }
+    }*/

@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:lcdCharacters xmlns:ns2="char_properties" xmlns:ns3="namespace.of.characters">
+    <character_table>
+        <entry>
+            <key id="141" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="141" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="86" width="5" height="8"/>
+            <value data="17 17 17 17 17 10 4 0">
+                <char_properties id="86" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="31" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="31" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="249" width="5" height="8"/>
+            <value data="8 4 17 17 17 19 13 0">
+                <char_properties id="249" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="194" width="5" height="8"/>
+            <value data="4 10 14 17 31 17 17 0">
+                <char_properties id="194" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="139" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="139" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="84" width="5" height="8"/>
+            <value data="31 4 4 4 4 4 4 0">
+                <char_properties id="84" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="29" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="29" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="247" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="247" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="192" width="5" height="8"/>
+            <value data="8 4 14 17 31 17 17 0">
+                <char_properties id="192" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="137" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="137" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="82" width="5" height="8"/>
+            <value data="30 17 17 30 20 18 17 0">
+                <char_properties id="82" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="27" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="27" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="245" width="5" height="8"/>
+            <value data="13 18 14 17 17 17 14 0">
+                <char_properties id="245" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="190" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="190" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="135" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="135" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="80" width="5" height="8"/>
+            <value data="30 17 17 30 16 16 16 0">
+                <char_properties id="80" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="25" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="25" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="243" width="5" height="8"/>
+            <value data="2 4 14 17 17 17 14 0">
+                <char_properties id="243" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="188" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="188" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="133" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="133" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="78" width="5" height="8"/>
+            <value data="17 17 25 21 19 17 17 0">
+                <char_properties id="78" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="23" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="23" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="241" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="241" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="186" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="186" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="131" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="131" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="76" width="5" height="8"/>
+            <value data="16 16 16 16 16 16 31 0">
+                <char_properties id="76" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="21" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="21" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="239" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="239" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="184" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="184" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="129" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="129" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="74" width="5" height="8"/>
+            <value data="7 2 2 2 2 18 12 0">
+                <char_properties id="74" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="19" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="19" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="237" width="5" height="8"/>
+            <value data="2 4 0 12 4 4 14 0">
+                <char_properties id="237" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="182" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="182" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="127" width="5" height="8"/>
+            <value data="0 4 8 31 8 4 0 0">
+                <char_properties id="127" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="72" width="5" height="8"/>
+            <value data="17 17 17 31 17 17 17 0">
+                <char_properties id="72" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="17" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="17" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="235" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="235" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="180" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="180" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="125" width="5" height="8"/>
+            <value data="8 4 4 2 4 4 8 0">
+                <char_properties id="125" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="70" width="5" height="8"/>
+            <value data="31 16 16 30 16 16 16 0">
+                <char_properties id="70" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="15" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="15" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="233" width="5" height="8"/>
+            <value data="2 4 14 17 31 16 14 0">
+                <char_properties id="233" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="178" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="178" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="123" width="5" height="8"/>
+            <value data="2 4 4 8 4 4 2 0">
+                <char_properties id="123" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="68" width="5" height="8"/>
+            <value data="28 18 17 17 17 18 28 0">
+                <char_properties id="68" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="13" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="13" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="231" width="5" height="8"/>
+            <value data="0 0 14 16 16 14 4 12">
+                <char_properties id="231" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="176" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="176" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="121" width="5" height="8"/>
+            <value data="0 0 17 17 9 7 1 14">
+                <char_properties id="121" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="66" width="5" height="8"/>
+            <value data="30 17 17 30 17 17 30 0">
+                <char_properties id="66" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="11" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="11" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="229" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="229" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="174" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="174" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="119" width="5" height="8"/>
+            <value data="0 0 17 17 21 21 10 0">
+                <char_properties id="119" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="64" width="5" height="8"/>
+            <value data="14 17 1 13 21 21 14 0">
+                <char_properties id="64" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="9" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="9" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="227" width="5" height="8"/>
+            <value data="13 18 14 1 15 17 15 0">
+                <char_properties id="227" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="172" width="5" height="8"/>
+            <value data="6 9 8 30 8 9 6 0">
+                <char_properties id="172" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="117" width="5" height="8"/>
+            <value data="0 0 17 17 17 19 13 0">
+                <char_properties id="117" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="62" width="5" height="8"/>
+            <value data="8 4 2 1 2 4 8 0">
+                <char_properties id="62" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="7" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="7" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="225" width="5" height="8"/>
+            <value data="2 4 14 1 15 17 15 0">
+                <char_properties id="225" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="170" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="170" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="115" width="5" height="8"/>
+            <value data="0 0 14 16 14 1 30 0">
+                <char_properties id="115" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="60" width="5" height="8"/>
+            <value data="2 4 8 16 8 4 2 0">
+                <char_properties id="60" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="5" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="5" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="223" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="223" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="168" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="168" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="113" width="5" height="8"/>
+            <value data="0 0 13 19 17 15 1 1">
+                <char_properties id="113" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="58" width="5" height="8"/>
+            <value data="0 12 12 0 12 12 0 0">
+                <char_properties id="58" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="3" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="3" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="221" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="221" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="166" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="166" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="111" width="5" height="8"/>
+            <value data="0 0 14 17 17 17 14 0">
+                <char_properties id="111" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="56" width="5" height="8"/>
+            <value data="14 17 17 14 17 17 14 0">
+                <char_properties id="56" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="1" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="1" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="219" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="219" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="164" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="164" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="109" width="5" height="8"/>
+            <value data="0 0 26 21 21 17 17 0">
+                <char_properties id="109" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="54" width="5" height="8"/>
+            <value data="6 8 16 30 17 17 14 0">
+                <char_properties id="54" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="217" width="5" height="8"/>
+            <value data="8 4 17 17 17 17 14 0">
+                <char_properties id="217" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="162" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="162" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="107" width="5" height="8"/>
+            <value data="16 16 18 20 24 20 18 0">
+                <char_properties id="107" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="52" width="5" height="8"/>
+            <value data="2 6 10 18 31 2 2 0">
+                <char_properties id="52" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="215" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="215" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="160" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="160" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="105" width="5" height="8"/>
+            <value data="4 0 12 4 4 4 14 0">
+                <char_properties id="105" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="50" width="5" height="8"/>
+            <value data="14 17 1 2 4 8 31 0">
+                <char_properties id="50" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="213" width="5" height="8"/>
+            <value data="13 18 14 17 17 17 14 0">
+                <char_properties id="213" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="158" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="158" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="103" width="5" height="8"/>
+            <value data="0 0 15 17 17 15 1 14">
+                <char_properties id="103" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="48" width="5" height="8"/>
+            <value data="14 17 19 21 25 17 14 0">
+                <char_properties id="48" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="211" width="5" height="8"/>
+            <value data="2 4 14 17 17 17 14 0">
+                <char_properties id="211" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="156" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="156" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="101" width="5" height="8"/>
+            <value data="0 0 14 17 31 16 14 0">
+                <char_properties id="101" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="46" width="5" height="8"/>
+            <value data="0 0 0 0 0 12 12 0">
+                <char_properties id="46" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="209" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="209" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="154" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="154" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="99" width="5" height="8"/>
+            <value data="0 0 14 16 16 16 14 0">
+                <char_properties id="99" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="44" width="5" height="8"/>
+            <value data="0 0 0 0 12 4 8 0">
+                <char_properties id="44" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="207" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="207" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="152" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="152" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="97" width="5" height="8"/>
+            <value data="0 0 14 1 15 17 15 0">
+                <char_properties id="97" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="42" width="5" height="8"/>
+            <value data="0 4 21 14 21 4 0 0">
+                <char_properties id="42" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="205" width="5" height="8"/>
+            <value data="2 4 14 4 4 4 14 0">
+                <char_properties id="205" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="150" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="150" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="95" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 31 0">
+                <char_properties id="95" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="40" width="5" height="8"/>
+            <value data="2 4 8 8 8 4 2 0">
+                <char_properties id="40" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="203" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="203" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="148" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="148" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="93" width="5" height="8"/>
+            <value data="14 2 2 2 2 2 14 0">
+                <char_properties id="93" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="38" width="5" height="8"/>
+            <value data="12 18 20 8 21 18 13 0">
+                <char_properties id="38" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="201" width="5" height="8"/>
+            <value data="2 4 31 16 30 16 31 0">
+                <char_properties id="201" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="146" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="146" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="91" width="5" height="8"/>
+            <value data="28 16 16 16 16 16 28 0">
+                <char_properties id="91" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="36" width="5" height="8"/>
+            <value data="4 15 20 14 5 30 4 0">
+                <char_properties id="36" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="254" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="254" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="199" width="5" height="8"/>
+            <value data="14 17 16 16 17 14 4 12">
+                <char_properties id="199" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="144" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="144" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="89" width="5" height="8"/>
+            <value data="17 17 17 10 4 4 4 0">
+                <char_properties id="89" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="34" width="5" height="8"/>
+            <value data="10 10 10 0 0 0 0 0">
+                <char_properties id="34" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="252" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="252" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="197" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="197" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="142" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="142" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="87" width="5" height="8"/>
+            <value data="17 17 17 21 21 21 10 0">
+                <char_properties id="87" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="32" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="32" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="250" width="5" height="8"/>
+            <value data="2 4 17 17 17 19 13 0">
+                <char_properties id="250" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="195" width="5" height="8"/>
+            <value data="13 18 14 17 31 17 17 0">
+                <char_properties id="195" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="140" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="140" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="85" width="5" height="8"/>
+            <value data="17 17 17 17 17 17 14 0">
+                <char_properties id="85" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="30" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="30" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="248" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="248" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="193" width="5" height="8"/>
+            <value data="2 4 14 17 31 17 17 0">
+                <char_properties id="193" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="138" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="138" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="83" width="5" height="8"/>
+            <value data="15 16 16 14 1 1 30 0">
+                <char_properties id="83" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="28" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="28" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="246" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="246" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="191" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="191" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="136" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="136" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="81" width="5" height="8"/>
+            <value data="14 17 17 17 21 18 13 0">
+                <char_properties id="81" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="26" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="26" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="244" width="5" height="8"/>
+            <value data="4 10 14 17 17 17 14 0">
+                <char_properties id="244" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="189" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="189" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="134" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="134" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="79" width="5" height="8"/>
+            <value data="14 17 17 17 17 17 14 0">
+                <char_properties id="79" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="24" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="24" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="242" width="5" height="8"/>
+            <value data="8 4 14 17 17 17 14 0">
+                <char_properties id="242" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="187" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="187" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="132" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="132" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="77" width="5" height="8"/>
+            <value data="17 27 21 21 17 17 17 0">
+                <char_properties id="77" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="22" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="22" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="240" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="240" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="185" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="185" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="130" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="130" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="75" width="5" height="8"/>
+            <value data="17 18 20 24 20 18 17 0">
+                <char_properties id="75" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="20" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="20" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="238" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="238" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="183" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="183" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="128" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="128" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="73" width="5" height="8"/>
+            <value data="14 4 4 4 4 4 14 0">
+                <char_properties id="73" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="18" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="18" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="236" width="5" height="8"/>
+            <value data="8 4 0 12 4 4 14 0">
+                <char_properties id="236" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="181" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="181" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="126" width="5" height="8"/>
+            <value data="0 4 2 31 2 4 0 0">
+                <char_properties id="126" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="71" width="5" height="8"/>
+            <value data="14 17 16 23 17 17 15 0">
+                <char_properties id="71" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="16" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="16" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="234" width="5" height="8"/>
+            <value data="4 10 14 17 31 16 14 0">
+                <char_properties id="234" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="179" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="179" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="124" width="5" height="8"/>
+            <value data="4 4 4 4 4 4 4 0">
+                <char_properties id="124" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="69" width="5" height="8"/>
+            <value data="31 16 16 30 16 16 31 0">
+                <char_properties id="69" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="14" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="14" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="232" width="5" height="8"/>
+            <value data="8 4 14 17 31 16 14 0">
+                <char_properties id="232" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="177" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="177" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="122" width="5" height="8"/>
+            <value data="0 0 31 2 4 8 31 0">
+                <char_properties id="122" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="67" width="5" height="8"/>
+            <value data="14 17 16 16 16 17 14 0">
+                <char_properties id="67" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="12" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="12" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="230" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="230" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="175" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="175" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="120" width="5" height="8"/>
+            <value data="0 0 17 10 4 10 17 0">
+                <char_properties id="120" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="65" width="5" height="8"/>
+            <value data="14 17 17 17 31 17 17 0">
+                <char_properties id="65" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="10" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="10" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="228" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="228" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="173" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="173" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="118" width="5" height="8"/>
+            <value data="0 0 17 17 17 10 4 0">
+                <char_properties id="118" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="63" width="5" height="8"/>
+            <value data="14 17 1 2 4 0 4 0">
+                <char_properties id="63" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="8" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="8" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="226" width="5" height="8"/>
+            <value data="4 10 14 1 15 17 15 0">
+                <char_properties id="226" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="171" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="171" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="116" width="5" height="8"/>
+            <value data="8 8 28 8 8 9 6 0">
+                <char_properties id="116" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="61" width="5" height="8"/>
+            <value data="0 0 31 0 31 0 0 0">
+                <char_properties id="61" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="6" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="6" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="224" width="5" height="8"/>
+            <value data="8 4 14 1 15 17 15 0">
+                <char_properties id="224" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="169" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="169" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="114" width="5" height="8"/>
+            <value data="0 0 22 25 16 16 16 0">
+                <char_properties id="114" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="59" width="5" height="8"/>
+            <value data="0 12 12 0 12 4 8 0">
+                <char_properties id="59" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="4" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="4" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="222" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="222" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="167" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="167" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="112" width="5" height="8"/>
+            <value data="0 0 30 17 17 30 16 16">
+                <char_properties id="112" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="57" width="5" height="8"/>
+            <value data="14 17 17 15 1 2 12 0">
+                <char_properties id="57" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="2" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="2" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="220" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="220" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="165" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="165" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="110" width="5" height="8"/>
+            <value data="0 0 22 25 17 17 17 0">
+                <char_properties id="110" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="55" width="5" height="8"/>
+            <value data="31 1 2 4 8 8 8 0">
+                <char_properties id="55" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="0" width="5" height="8"/>
+            <value data="0 0 0 0 0 0 0 0">
+                <char_properties id="0" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="218" width="5" height="8"/>
+            <value data="2 4 17 17 17 17 14 0">
+                <char_properties id="218" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="163" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="163" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="108" width="5" height="8"/>
+            <value data="12 4 4 4 4 4 14 0">
+                <char_properties id="108" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="53" width="5" height="8"/>
+            <value data="31 16 30 1 1 17 14 0">
+                <char_properties id="53" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="216" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="216" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="161" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="161" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="106" width="5" height="8"/>
+            <value data="2 0 6 2 2 2 18 12">
+                <char_properties id="106" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="51" width="5" height="8"/>
+            <value data="31 2 4 2 1 17 14 0">
+                <char_properties id="51" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="214" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="214" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="159" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="159" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="104" width="5" height="8"/>
+            <value data="16 16 22 25 17 17 17 0">
+                <char_properties id="104" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="49" width="5" height="8"/>
+            <value data="4 12 4 4 4 4 14 0">
+                <char_properties id="49" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="212" width="5" height="8"/>
+            <value data="4 10 14 17 17 17 14 0">
+                <char_properties id="212" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="157" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="157" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="102" width="5" height="8"/>
+            <value data="6 9 8 28 8 8 8 0">
+                <char_properties id="102" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="47" width="5" height="8"/>
+            <value data="0 1 2 4 8 16 0 0">
+                <char_properties id="47" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="210" width="5" height="8"/>
+            <value data="8 4 14 17 17 17 14 0">
+                <char_properties id="210" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="155" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="155" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="100" width="5" height="8"/>
+            <value data="1 1 13 19 17 17 15 0">
+                <char_properties id="100" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="45" width="5" height="8"/>
+            <value data="0 0 0 31 0 0 0 0">
+                <char_properties id="45" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="208" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="208" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="153" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="153" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="98" width="5" height="8"/>
+            <value data="16 16 22 25 17 17 30 0">
+                <char_properties id="98" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="43" width="5" height="8"/>
+            <value data="0 4 4 31 4 4 0 0">
+                <char_properties id="43" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="206" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="206" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="151" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="151" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="96" width="5" height="8"/>
+            <value data="8 4 2 0 0 0 0 0">
+                <char_properties id="96" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="41" width="5" height="8"/>
+            <value data="8 4 2 2 2 4 8 0">
+                <char_properties id="41" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="204" width="5" height="8"/>
+            <value data="8 4 14 4 4 4 14 0">
+                <char_properties id="204" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="149" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="149" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="94" width="5" height="8"/>
+            <value data="4 10 17 0 0 0 0 0">
+                <char_properties id="94" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="39" width="5" height="8"/>
+            <value data="12 4 8 0 0 0 0 0">
+                <char_properties id="39" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="202" width="5" height="8"/>
+            <value data="4 10 31 16 30 16 31 0">
+                <char_properties id="202" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="147" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="147" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="92" width="5" height="8"/>
+            <value data="0 16 8 4 2 1 0 0">
+                <char_properties id="92" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="37" width="5" height="8"/>
+            <value data="24 25 2 4 8 19 3 0">
+                <char_properties id="37" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="255" width="5" height="8"/>
+            <value data="255 255 255 255 255 255 255 255">
+                <char_properties id="255" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="200" width="5" height="8"/>
+            <value data="8 4 31 16 30 16 31 0">
+                <char_properties id="200" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="145" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="145" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="90" width="5" height="8"/>
+            <value data="31 1 2 4 8 16 31 0">
+                <char_properties id="90" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="35" width="5" height="8"/>
+            <value data="10 10 31 10 31 10 10 0">
+                <char_properties id="35" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="253" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="253" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="198" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="198" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="143" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="143" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="88" width="5" height="8"/>
+            <value data="17 17 10 4 10 17 17 0">
+                <char_properties id="88" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="33" width="5" height="8"/>
+            <value data="4 4 4 4 0 0 4 0">
+                <char_properties id="33" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="251" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="251" width="5" height="8"/>
+            </value>
+        </entry>
+        <entry>
+            <key id="196" width="5" height="8"/>
+            <value data="21 10 21 10 21 10 21 10">
+                <char_properties id="196" width="5" height="8"/>
+            </value>
+        </entry>
+    </character_table>
+</ns3:lcdCharacters>

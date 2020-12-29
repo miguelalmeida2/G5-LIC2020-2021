@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Simul.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/HAL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/HAL.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/RouletteDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/RouletteDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter$Destination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter$Destination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +32,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -63,6 +67,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -75,55 +80,5 @@
       <updated>1607466289968</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1051" y="203" key="#Notifications" timestamp="1607808640779">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state x="1051" y="203" key="#Notifications/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607808640779" />
-    <state x="795" y="426" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607897862127">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state x="795" y="426" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607897862127" />
-    <state x="1201" y="295" key="FileChooserDialogImpl" timestamp="1607808424358">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state x="1201" y="295" key="FileChooserDialogImpl/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607808424358" />
-    <state width="1843" height="375" key="GridCell.Tab.0.bottom" timestamp="1607900376680">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state width="1843" height="375" key="GridCell.Tab.0.bottom/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607900376680" />
-    <state width="1843" height="375" key="GridCell.Tab.0.center" timestamp="1607900376680">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state width="1843" height="375" key="GridCell.Tab.0.center/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607900376680" />
-    <state width="1843" height="375" key="GridCell.Tab.0.left" timestamp="1607900376680">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state width="1843" height="375" key="GridCell.Tab.0.left/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607900376680" />
-    <state width="1843" height="375" key="GridCell.Tab.0.right" timestamp="1607900376680">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state width="1843" height="375" key="GridCell.Tab.0.right/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607900376680" />
-    <state width="1843" height="375" key="GridCell.Tab.1.bottom" timestamp="1607900376680">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state width="1843" height="375" key="GridCell.Tab.1.bottom/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607900376680" />
-    <state width="1843" height="375" key="GridCell.Tab.1.center" timestamp="1607900376680">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state width="1843" height="375" key="GridCell.Tab.1.center/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607900376680" />
-    <state width="1843" height="375" key="GridCell.Tab.1.left" timestamp="1607900376680">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state width="1843" height="375" key="GridCell.Tab.1.left/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607900376680" />
-    <state width="1843" height="375" key="GridCell.Tab.1.right" timestamp="1607900376680">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state width="1843" height="375" key="GridCell.Tab.1.right/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607900376680" />
-    <state x="880" y="183" key="SettingsEditor" timestamp="1607899064326">
-      <screen x="78" y="0" width="1842" height="1080" />
-    </state>
-    <state x="880" y="183" key="SettingsEditor/78.0.1842.1080/-1920.13.1920.1040@78.0.1842.1080" timestamp="1607899064326" />
   </component>
 </project>

@@ -1,0 +1,16 @@
+Name     template ; 
+PartNo   00 ; 
+Date     10/10/10 ;
+Revision 01 ;
+Designer Engineer ;
+Company  None ;
+Assembly None ; 
+Location  ;
+Device   v750c ;
+
+/* Start Here */
+PIN 1 = a;
+PIN 14 = f;
+
+f = a;
+
