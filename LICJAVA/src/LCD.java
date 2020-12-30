@@ -1,10 +1,15 @@
-import isel.leic.UsbPort;
-import isel.leic.utils.*;
+import isel.leic.utils.Time;
 
 public class LCD { // Escreve no LCD usando a interface a 4 bits.
+
+    public static void main(String[] args){
+        HAL.init();
+        init();
+        write("Hello world");
+    }
+
     public static final int LINES = 2, COLS = 16; // Dimensão do display.
     public static final int NIBBLE_SIZE = 4;
-
 
     // Define se a interface com o LCD é série ou paralela
     private static final boolean SERIAL_INTERFACE = false;
@@ -84,14 +89,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
 
     // Envia comando para limpar o ecrã e posicionar o cursor em (0,0)
     public static void clear() {
-        writeCMD(0x01); // Clear Display
-        //cursor(0,0); // Coloca o Cursor na posicao 0,0
+        writeCMD(0x01); // Clear Display e Coloca o cursor na posicao 0,0
     }
 
-    public static void main(String[] args) {
-        HAL.init();
-
-        init();
-        write('A');
-    }
 }

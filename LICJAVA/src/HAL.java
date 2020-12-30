@@ -1,14 +1,25 @@
 import isel.leic.UsbPort;
-import isel.leic.utils.*;
 
-public class HAL { // Virtualiza o acesso ao sistema UsbPort
+// Virtualiza o acesso ao sistema UsbPort
+public class HAL {
 
-    private static int lastValue = 0x00;
+    private static int lastValue;
+    public static final boolean simulation = true;
+
+
+    public static void main(String[] args){
+        init();
+        readBits(8);
+/*        KBD.init();
+        while (true){
+            char key = 0;
+                    //KBD.waitKey(System.currentTimeMillis());
+            if (key!=0) System.out.println(key);
+        }*/
+    }
 
     // Inicia a classe
-    public static void init() {
-        out(lastValue);
-    }
+    public static void init() { out(lastValue = 0x00); }
 
     // Retorna true se o bit tiver o valor lógico ‘1’
     public static boolean isBit(int mask){
