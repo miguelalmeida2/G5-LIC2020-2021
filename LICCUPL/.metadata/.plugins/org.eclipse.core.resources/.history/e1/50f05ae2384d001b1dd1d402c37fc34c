@@ -23,8 +23,8 @@ PIN 21 = Kpress ;
 [Q0..1].CK = CLK & Kscan;
 [Q0..1].sp = 'b'0;
 
-Q0.d = (Q0 & !Kscan) # (!Q0 & !Q1 & Kscan);
-Q1.d = (Q1 & !Kscan) # (Q0 & Kscan);
+Q0.d = !Q0 ;
+Q1.d = Q0 $ Q1 ;
 
 /* ***** DECODER ***** */
 

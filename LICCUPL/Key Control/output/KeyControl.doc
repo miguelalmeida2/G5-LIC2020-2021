@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# MW-10400000
 Device          v750c  Library DLIB-h-40-2
-Created         Tue Dec 29 02:50:13 2020
+Created         Sat Jan 02 20:16:42 2021
 Name            KeyControl 
 Partno          00 
 Revision        01 
@@ -69,7 +69,7 @@ Kval =>
 Q0.d  =>
     A0 & Q0
   # A1 & Q0
-  # !A0 & !A1 & !Q0
+  # !A0 & !A1 & !Q0 & !Q1
 
 Q0.ck  =>
     !CLK
@@ -80,8 +80,7 @@ Q0.sp  =>
 Q1.d  =>
     A0 & Q1
   # A1 & Q1
-  # !Q0 & Q1
-  # !A0 & !A1 & Q0 & !Q1
+  # !A0 & !A1 & Q0
 
 Q1.ck  =>
     !CLK
@@ -173,7 +172,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     Q0                  ck      17       X        1       1       1     
     Q0                  sp      17       X        1       1       1     
     Q1                          18       V        -       -       -     
-    Q1                  d       18       X        4       16      2     
+    Q1                  d       18       X        3       16      2     
     Q1                  ck      18       X        1       1       1     
     Q1                  sp      18       X        1       1       1     
     Q2                          19       V        -       -       -     
@@ -302,8 +301,8 @@ Pin #19 Node 30 ,40  14376 Mode  xx-  14411 xxxx
 Pin #18 Node 29 ,39  14379 Mode  xx-  14415 xxxx 
  07140 --------------------------------------x-----------------------x--------------------- 
  07224 --------------------------------------x-------------------------------x------------- 
- 07308 -------------------------------x------x--------------------------------------------- 
- 07392 ------------------------------x--------x-----------------------x-------x------------ 
+ 07308 ------------------------------x--------------------------------x-------x------------ 
+ 07392 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  07476 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  07560 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  07644 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
@@ -324,7 +323,7 @@ Pin #18 Node 29 ,39  14379 Mode  xx-  14415 xxxx
 Pin #17 Node 28 ,38  14382 Mode  xx-  14419 xxxx 
  08904 ------------------------------x-------------------------------x--------------------- 
  08988 ------------------------------x---------------------------------------x------------- 
- 09072 -------------------------------x-------------------------------x-------x------------ 
+ 09072 -------------------------------x-------x-----------------------x-------x------------ 
  09156 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  09240 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  09324 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 

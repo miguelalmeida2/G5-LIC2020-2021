@@ -31,8 +31,8 @@ PINNODE 32 = K0;
 [K0..1].CK = !CLK;
 [K0..1].sp = 'b'0;
 
-K0.d = (K0 & !Kscan) # (!K0 & !K1 & Kscan);
-K1.d = (K1 & !Kscan) # (K0 & Kscan);
+K0.d = K0 $ Kscan;
+K1.d = (K0 & Kscan) $ K1;
 
 /* ***** DECODER ***** */
 DEC0 = K1 # K0;

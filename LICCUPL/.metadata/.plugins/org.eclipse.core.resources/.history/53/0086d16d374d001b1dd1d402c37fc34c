@@ -24,10 +24,10 @@ PIN 23 = Kval;
 [Q0..1].sp = 'b'0;
 
 
-Q0.d = (Q0 & !Kscan) # (!Q0 & !Q1 & Kscan);
-Q1.d = (Q1 & !Kscan) # (Q0 & Kscan);
+Q0.d = Q0 $ Kscan;
+Q1.d = (Q0 & Kscan) $ Q1;
 
-/* ***** DECODER ***** */ 
+/* ***** DECODER ***** */
 K0 = Q1 # Q0;
 K1 = Q1 # !Q0;
 K2 = !Q1 # Q0;

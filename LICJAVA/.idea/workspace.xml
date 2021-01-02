@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../LICDOCS/4x4 Keyboard Datasheet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICDOCS/7SEG liteon_LTS-4301JF.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICDOCS/ATB Datasheet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICDOCS/ATF 750C.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICDOCS/rouletteDisplay.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Simul.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/HAL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/HAL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RouletteGame/Statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../RouletteGame/Statistics.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

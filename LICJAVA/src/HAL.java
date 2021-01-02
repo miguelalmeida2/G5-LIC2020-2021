@@ -13,6 +13,7 @@ public class HAL {
 /*        KBD.init();
         while (true){
             char key = 0;
+            key = KBD.getKey();
                     //KBD.waitKey(System.currentTimeMillis());
             if (key!=0) System.out.println(key);
         }*/

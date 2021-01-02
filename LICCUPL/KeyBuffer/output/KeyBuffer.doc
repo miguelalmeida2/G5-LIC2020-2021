@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# MW-10400000
 Device          v750c  Library DLIB-h-40-2
-Created         Tue Dec 29 02:50:26 2020
+Created         Sat Jan 02 20:29:29 2021
 Name            KeyBuffer 
 Partno          00 
 Revision        01 
@@ -86,8 +86,8 @@ Dval =>
     !B0 & B1
 
 K0.d  =>
-    !K0 & Kscan
-  # K0 & !Kscan
+    K0 & !Kscan
+  # !K0 & !K1 & Kscan
 
 K0.ck  =>
     !CLK
@@ -96,9 +96,8 @@ K0.sp  =>
     0 
 
 K1.d  =>
-    !K0 & K1
+    K0 & Kscan
   # K1 & !Kscan
-  # K0 & !K1 & Kscan
 
 K1.ck  =>
     !CLK
@@ -248,7 +247,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     K0                  ck      32       M        1       1       1     
     K0                  sp      32       M        1       1       1     
     K1                          33       N        -       -       -     
-    K1                  d       33       M        3       5       2     
+    K1                  d       33       M        2       5       2     
     K1                  ck      33       M        1       1       1     
     K1                  sp      33       M        1       1       1     
     K2                          28       N        -       -       -     
@@ -324,9 +323,9 @@ Pin #22 Node 33 ,43  14367 Mode  x--  14399 xxxx
  01260 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  01344 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  01428 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
- 01512 -------------------------------------------------------------x------x--------------- 
+ 01512 -------------------------------------------------x----------x----------------------- 
  01596 ------------------------------------------------x-------------------x--------------- 
- 01680 -------------------------------------------------x----------x--------x-------------- 
+ 01680 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  01764 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  01848 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  01932 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
@@ -341,8 +340,8 @@ Pin #21 Node 32 ,42  14370 Mode  x--  14403 xxxx
  02604 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  02688 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  02772 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
- 02856 -------------------------------------------------x-----------x---------------------- 
- 02940 ------------------------------------------------x-----------x----------------------- 
+ 02856 ------------------------------------------------x-----------x----------------------- 
+ 02940 -------------------------------------------------x-----------x-------x-------------- 
  03024 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  03108 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  03192 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
