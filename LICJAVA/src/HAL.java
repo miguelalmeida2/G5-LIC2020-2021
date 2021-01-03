@@ -9,7 +9,7 @@ public class HAL {
 
     public static void main(String[] args){
         init();
-        readBits(8);
+        clrBits(0xff);
 /*        KBD.init();
         while (true){
             char key = 0;
@@ -20,7 +20,7 @@ public class HAL {
     }
 
     // Inicia a classe
-    public static void init() { out(lastValue = 0x00); }
+    public static void init() { out(lastValue = 0); }
 
     // Retorna true se o bit tiver o valor lógico ‘1’
     public static boolean isBit(int mask){
@@ -34,8 +34,10 @@ public class HAL {
 
     // Escreve nos bits representados por mask o valor de value
     public static void writeBits(int mask, int value) {
-       lastValue = (mask & value) | (~mask & lastValue);
-       out(lastValue);
+       /*lastValue = (mask & value) | (~mask & lastValue);
+       out(lastValue);*/
+        clrBits(mask);
+        setBits(value & mask);
     }
 
     // Coloca os bits representados por mask no valor lógico ‘1’
@@ -45,10 +47,11 @@ public class HAL {
 
     // Coloca os bits representados por mask no valor lógico ‘0’
     public static void clrBits(int mask){
-       out(lastValue &= ~mask);
+        out(lastValue &= ~mask);
     }
 
     private static void out(int val){
-        UsbPort.out(~val);
+        UsbPort.out(val);
     }
+
 }
