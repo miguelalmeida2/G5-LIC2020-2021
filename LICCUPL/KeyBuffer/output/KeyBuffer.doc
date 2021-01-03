@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# MW-10400000
 Device          v750c  Library DLIB-h-40-2
-Created         Sat Jan 02 20:29:29 2021
+Created         Sun Jan 03 00:05:20 2021
 Name            KeyBuffer 
 Partno          00 
 Revision        01 
@@ -106,8 +106,7 @@ K1.sp  =>
     0 
 
 K2.d  =>
-    I0 & !I1
-  # I0 & I2 & !I3
+    !I0 & !I1
 
 K2.ck  =>
     !Kscan
@@ -116,8 +115,8 @@ K2.sp  =>
     0 
 
 K3.d  =>
-    I0 & I1 & !I2
-  # I0 & I1 & !I3
+    !I0 & !I1
+  # !I0 & !I2 & !I3
 
 K3.ck  =>
     !Kscan
@@ -251,7 +250,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     K1                  ck      33       M        1       1       1     
     K1                  sp      33       M        1       1       1     
     K2                          28       N        -       -       -     
-    K2                  d       28       M        2       7       2     
+    K2                  d       28       M        1       7       2     
     K2                  ck      28       M        1       1       1     
     K2                  sp      28       M        1       1       1     
     K3                          27       N        -       -       -     
@@ -423,8 +422,8 @@ Pin #17 Node 28 ,38  14382 Mode  ---  14419 xxxx
  09240 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  09324 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  09408 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
- 09492 ----------------------------------------------------------x--------x---------------- 
- 09576 ------------------------------------------x--------x---------------x---------------- 
+ 09492 ----------------------------------------------------------x-------x----------------- 
+ 09576 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  09660 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  09744 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  09828 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
@@ -442,8 +441,8 @@ Pin #16 Node 27 ,37  14385 Mode  ---  14423 xxxx
  10752 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  10836 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  10920 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
- 11004 --------------------------------------------------x--------x-------x---------------- 
- 11088 ------------------------------------------x----------------x-------x---------------- 
+ 11004 ----------------------------------------------------------x-------x----------------- 
+ 11088 ------------------------------------------x-------x---------------x----------------- 
  11172 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  11256 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  11340 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
