@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/HAL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/HAL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICLOGISIM/LICRouletteDisplay.circ" beforeDir="false" afterPath="$PROJECT_DIR$/../LICLOGISIM/LICRouletteDisplay.circ" afterDir="false" />
-    </list>
+    <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
