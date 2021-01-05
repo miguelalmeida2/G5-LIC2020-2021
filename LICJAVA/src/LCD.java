@@ -32,14 +32,15 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
 
     // Escreve um nibble de comando/dados no LCD em paralelo
     private static void writeNibbleParallel(boolean rs, int data) {
+        //only works if data is denied
         if(rs){
-            HAL.writeBits(0x10,0x10);
+            HAL.writeBits(0x10,~0x10);
         }else{
-            HAL.writeBits(0x10,0);
+            HAL.writeBits(0x10,~0);
         }
-        HAL.writeBits(0x20,0x20);
-        HAL.writeBits(0x0F,data);
-        HAL.writeBits(0x20,0);
+        HAL.writeBits(0x20,~0x20);
+        HAL.writeBits(0x0F,~data);
+        HAL.writeBits(0x20,~0);
     }
 
     // Escreve um nibble de comando/dados no LCD em série

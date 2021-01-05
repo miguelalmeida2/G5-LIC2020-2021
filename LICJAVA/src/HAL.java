@@ -6,7 +6,6 @@ public class HAL {
     private static int lastValue;
     public static final boolean simulation = true;
 
-
     public static void main(String[] args){
         init();
         clrBits(0xff);

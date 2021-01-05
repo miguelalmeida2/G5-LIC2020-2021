@@ -6,6 +6,7 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
         HAL.init();
         KBD.init();
         char key;
+        HAL.clrBits(ACK_MASK);
         while (true){
             key = getKey();
             if (key != NONE) System.out.println("k " + key);
@@ -24,20 +25,27 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
 
     // Inicia a classe
     public static void init() {
-        boolean simulation = false;
+        boolean simulation = true;
         keyboard = (simulation? keyboard_simulation :keyboard_hardware);
     }
 
     // Retorna de imediato a tecla premida ou NONE se não há tecla premida.
     public static char getKey() {
         char key = NONE;
-        if(HAL.isBit(KVAL_MASK)) { //verifica se Kval está ativo
-            System.out.println("bits " + HAL.readBits(KBD_MASK));
-            key = keyboard[HAL.readBits(KBD_MASK)];
+        if(HAL.isBit(KVAL_MASK)) { //verifica se Kval ativo
+            int keyopposite = KBD_MASK & ~HAL.readBits(KBD_MASK);
+            if (keyopposite >= 12 || keyopposite < 0) return key;
+
+            //if (key >= 12 || key < 0) return key;
+
+            System.out.println("bits " + HAL.readBits(KBD_MASK) + "   !bits " + keyopposite);
+            //HAL.clrBits(ACK_MASK);
+
+            key = keyboard[keyopposite];
             HAL.setBits(ACK_MASK); //ativa acknowledge
+
             while (HAL.isBit(KVAL_MASK)) ;
             HAL.clrBits(ACK_MASK);
-            System.out.println(" " + key);
         }return key;
     }
 
@@ -51,5 +59,4 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
         } while (System.currentTimeMillis()<timeout);
         return NONE;
     }
-
 }
