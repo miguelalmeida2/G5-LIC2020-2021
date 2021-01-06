@@ -1,4 +1,3 @@
-import isel.leic.UsbPort;
 import isel.leic.utils.*;
 
 import java.security.SecureRandom;
@@ -14,8 +13,8 @@ public class RouletteDisplay { // Controla o Roulette Display.
         TUI.init();
         init();
 
-        UsbPort.out(0);
         SerialEmitter.init();
+        HAL.writeBits(0x0F, 1);
         animation();
 
     }
@@ -33,14 +32,18 @@ public class RouletteDisplay { // Controla o Roulette Display.
 
     // Envia comando de animação
     public static void animation() {
-        int i=0;
-      while (!FoundNumber && i==9) {
+        int i=3;
+
+        showNumber(i);
+        Time.sleep(250);
+      /*while (!FoundNumber && i<9) {
           for (i = 0; i < 10; i++) {
               Time.sleep(250);
               showNumber(i);
           }
-      }
+      }*/
       showNumber(luckyNumber);
+      Time.sleep(100000);
       }
 
 }
