@@ -8,8 +8,8 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
         write("Hello world");
     }
 
-    public static final int LINES = 2, COLS = 16; // Dimensão do display.
-    public static final int NIBBLE_SIZE = 4;
+    private static final int LINES = 2, COLS = 16; // Dimensão do display.
+    private static final int NIBBLE_SIZE = 4;
 
     // Define se a interface com o LCD é série ou paralela
     private static final boolean SERIAL_INTERFACE = false;
@@ -34,13 +34,13 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     private static void writeNibbleParallel(boolean rs, int data) {
         //only works if data is denied
         if(rs){
-            HAL.writeBits(0x10,~0x10);
+            HAL.writeBits(0x10,0x10);
         }else{
-            HAL.writeBits(0x10,~0);
+            HAL.writeBits(0x10,0);
         }
-        HAL.writeBits(0x20,~0x20);
-        HAL.writeBits(0x0F,~data);
-        HAL.writeBits(0x20,~0);
+        HAL.writeBits(0x20,0x20);
+        HAL.writeBits(0x0F,data);
+        HAL.writeBits(0x20,0);
     }
 
     // Escreve um nibble de comando/dados no LCD em série

@@ -33,15 +33,15 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
     public static char getKey() {
         char key = NONE;
         if(HAL.isBit(KVAL_MASK)) { //verifica se Kval ativo
-            int keyopposite = KBD_MASK & ~HAL.readBits(KBD_MASK);
-            if (keyopposite >= 12 || keyopposite < 0) return key;
+            //int keyopposite = KBD_MASK & HAL.readBits(KBD_MASK);
+            //if (keyopposite >= 12 || keyopposite < 0) return key;
 
             //if (key >= 12 || key < 0) return key;
 
-            System.out.println("bits " + HAL.readBits(KBD_MASK) + "   !bits " + keyopposite);
+            System.out.println("bits " + HAL.readBits(KBD_MASK));
             //HAL.clrBits(ACK_MASK);
 
-            key = keyboard[keyopposite];
+            key = keyboard[KBD_MASK & HAL.readBits(KBD_MASK)];
             HAL.setBits(ACK_MASK); //ativa acknowledge
 
             while (HAL.isBit(KVAL_MASK)) ;

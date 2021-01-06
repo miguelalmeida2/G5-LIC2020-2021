@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/M.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RouletteGameApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/TUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/TUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware.simul" beforeDir="false" afterPath="$PROJECT_DIR$/hardware.simul" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HAL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/M.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RouletteDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RouletteGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteGameApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RouletteGame/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../RouletteGame/Simul.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +41,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Application.TUI">
-    <configuration name="HAL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HAL" />
-      <module name="LICJAVA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.RouletteGameApp">
     <configuration name="KBD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KBD" />
       <module name="LICJAVA" />
@@ -60,6 +56,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RouletteDisplay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RouletteDisplay" />
+      <module name="LICJAVA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RouletteGameApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RouletteGameApp" />
+      <module name="LICJAVA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TUI" />
       <module name="LICJAVA" />
@@ -69,10 +79,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RouletteGameApp" />
+        <item itemvalue="Application.RouletteDisplay" />
         <item itemvalue="Application.TUI" />
         <item itemvalue="Application.KBD" />
         <item itemvalue="Application.LCD" />
-        <item itemvalue="Application.HAL" />
       </list>
     </recent_temporary>
   </component>
@@ -101,27 +112,5 @@
       <updated>1607466289968</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/HAL.java</url>
-          <line>47</line>
-          <properties class="HAL" method="clrBits">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/KBD.java</url>
-          <line>32</line>
-          <properties class="KBD" method="getKey">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

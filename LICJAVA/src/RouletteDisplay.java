@@ -4,6 +4,22 @@ import isel.leic.utils.*;
 import java.security.SecureRandom;
 
 public class RouletteDisplay { // Controla o Roulette Display.
+    public static boolean FoundNumber = false;
+    public static int luckyNumber = 5;
+
+    public static void main(String[] args){
+        HAL.init();
+        KBD.init();
+        LCD.init();
+        TUI.init();
+        init();
+
+        UsbPort.out(0);
+        SerialEmitter.init();
+        animation();
+
+    }
+
     // Inicia a classe, estabelecendo os valores iniciais.
     public static void init() {
 
@@ -14,15 +30,17 @@ public class RouletteDisplay { // Controla o Roulette Display.
     }
 
 
+
     // Envia comando de animação
-    /** public static void animation() {
-      while (!FoundNumber) {
-          for (int i = 0; i < 10; i++) {
+    public static void animation() {
+        int i=0;
+      while (!FoundNumber && i==9) {
+          for (i = 0; i < 10; i++) {
               Time.sleep(250);
               showNumber(i);
           }
       }
       showNumber(luckyNumber);
       }
-     **/
+
 }

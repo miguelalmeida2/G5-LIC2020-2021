@@ -15,3 +15,6 @@ kbd.K[0-3] -> UsbPort.I[0-3]
 UsbPort.O[0-3]  -> lcd.D[4-7]
 UsbPort.O4      -> lcd.rs
 UsbPort.O5      -> lcd.e
+
+
+

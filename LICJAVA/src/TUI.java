@@ -1,8 +1,4 @@
-
-
 public class TUI {
-
-
 
     public static void main(String[] args){
         HAL.init();
@@ -10,22 +6,6 @@ public class TUI {
         LCD.init();
         RouletteDisplay.init();
         init();
-
-        clearScreen();
-        write(" Roulette Game  ");
-        setCursorLine(true);
-        write(" 1 X 2 X 3 X" + M.coinDigitDim() + "$" + M.totalCoins);
-
-
-        //wait for game start
-        waitforKey('*');
-        clearScreen();
-        setCursorLine(true);
-        write("0123456789  " + M.coinDigitDim() + "$" + M.totalCoins);
-        while (true){
-            RouletteGameApp.placeBet((int)(readBets()-'0'));
-        }
-
     }
 
     public static void init(){
@@ -33,10 +13,9 @@ public class TUI {
     }
 
     public static char readBets(){
-        char key = 'a';
-        while (key == 'a'){
+        char key = 0;
+        while (key == 0){
             key = KBD.getKey();
-            System.out.println((int)(key-'0'));
         }return key;
     }
 
@@ -51,6 +30,11 @@ public class TUI {
         LCD.write(text);
     }
 
+    public static void write(String text, int line, int col){
+        LCD.cursor(line,col);
+        LCD.write(text);
+    }
+
     public static void clearScreen(){
         LCD.clear();
     }
@@ -59,5 +43,15 @@ public class TUI {
     public static void setCursorLine(boolean line){
         LCD.cursor(line?1:0,0);
     }
+
+    public static String coinDigitDim(){
+        String spaces = "";
+        if(RouletteGameApp.totalCoins < 10) spaces = "  ";
+        else if(RouletteGameApp.totalCoins < 100) spaces = " ";
+        //preciso de considerar superior a 999???
+        return spaces;
+    }
+
+
 
 }

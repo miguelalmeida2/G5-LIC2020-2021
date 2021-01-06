@@ -28,7 +28,7 @@ public class HAL {
 
     // Retorna os valores dos bits representados por mask presentes no UsbPort
     public static int readBits(int mask) {
-      return (UsbPort.in() & mask);
+      return (~UsbPort.in() & mask);
     }
 
     // Escreve nos bits representados por mask o valor de value
@@ -50,7 +50,7 @@ public class HAL {
     }
 
     private static void out(int val){
-        UsbPort.out(val);
+        UsbPort.out(~val);
     }
 
 }
