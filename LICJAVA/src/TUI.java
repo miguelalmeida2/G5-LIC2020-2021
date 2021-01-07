@@ -8,6 +8,9 @@ public class TUI {
         init();
     }
 
+    public static int[] specialChar = {0b00000111,0b00001000,0b00011110,0b00001000,0b00011110,0b00001000,0b00000111,0b00000000};
+
+
     public static void init(){
 
     }
@@ -39,17 +42,21 @@ public class TUI {
         LCD.clear();
     }
 
-    //Set cursor line false for first line and true for second line
-    public static void setCursorLine(boolean line){
-        LCD.cursor(line?1:0,0);
-    }
-
-    public static String coinDigitDim(){
-        String spaces = "";
-        if(RouletteGameApp.totalCoins < 10) spaces = "  ";
-        else if(RouletteGameApp.totalCoins < 100) spaces = " ";
+    public static int digitDim(int digit){
+        int spaces = 0;
+        if(digit < 10) spaces = 1;
+        else if(digit < 100) spaces = 2;
+        else spaces = 3;
         //preciso de considerar superior a 999???
         return spaces;
+    }
+
+    public static void setCursor(int line, int col){
+        LCD.setCursor(line, col);
+    }
+
+    public static void specialChar(){
+
     }
 
 

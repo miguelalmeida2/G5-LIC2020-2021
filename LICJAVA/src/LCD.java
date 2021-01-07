@@ -5,7 +5,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     public static void main(String[] args){
         HAL.init();
         init();
-        write("Hello world");
+        specialChar();
     }
 
     private static final int LINES = 2, COLS = 16; // Dimensão do display.
@@ -74,6 +74,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     // Escreve um caráter na posição corrente.
     public static void write(char c) {
         writeDATA((int)c);
+        Time.sleep(25);
     }
 
     // Escreve uma string na posição corrente.
@@ -93,4 +94,27 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
         writeCMD(0x01); // Clear Display e Coloca o cursor na posicao 0,0
     }
 
+    public static void setCursor(int line, int col){
+        cursor(line, col);
+    }
+
+    public static void specialChar(){
+        //writeCMD(0x30);
+        writeCMD( 0x40+(0*8));
+        for(int i = 0; i < 8; i++) writeByte(true,TUI.specialChar[i]);
+        writeByte(true,1);
+    }
+
+        /*writeByte(true,0b00000111);
+        writeByte(true,0b00001000);
+        writeByte(true,0b00011110);
+        writeByte(true,0b00001000);
+
+        writeByte(true,0b00011110);
+        writeByte(true,0b00001000);
+        writeByte(true,0b00000111);
+        writeByte(true,0b00000000);*/
+
+        //writeByte(true,1);
+        //}
 }

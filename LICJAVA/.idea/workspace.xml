@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/RouletteGame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RouletteGame.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RouletteGame.simul" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICJAVA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LICJAVA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Simul.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hardware.simul" beforeDir="false" afterPath="$PROJECT_DIR$/hardware.simul" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/RouletteDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/RouletteDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter$Destination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter$Destination.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RouletteDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RouletteGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteGameApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RouletteGame/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../RouletteGame/Simul.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +50,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KBD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KBD" />
+    <configuration name="LCD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LCD" />
       <module name="LICJAVA" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,10 +81,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.RouletteGameApp" />
+        <item itemvalue="Application.LCD" />
         <item itemvalue="Application.RouletteDisplay" />
         <item itemvalue="Application.HAL" />
         <item itemvalue="Application.TUI" />
-        <item itemvalue="Application.KBD" />
       </list>
     </recent_temporary>
   </component>
