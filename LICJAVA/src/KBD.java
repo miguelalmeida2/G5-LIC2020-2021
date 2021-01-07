@@ -26,7 +26,7 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
     // Inicia a classe
     public static void init() {
         boolean simulation = true;
-        keyboard = (simulation? keyboard_simulation :keyboard_hardware);
+        keyboard = (simulation) ? keyboard_simulation :keyboard_hardware;
     }
 
     // Retorna de imediato a tecla premida ou NONE se não há tecla premida.
@@ -48,6 +48,7 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
             HAL.clrBits(ACK_MASK);
         }return key;
     }
+
 
     // Retorna quando a tecla é premida ou NONE após decorrido ‘timeout’ milisegundos.
     public static char waitKey(long timeout) {
