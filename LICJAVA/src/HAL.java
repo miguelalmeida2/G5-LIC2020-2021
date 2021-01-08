@@ -1,4 +1,5 @@
 import isel.leic.UsbPort;
+import isel.leic.utils.Time;
 
 // Virtualiza o acesso ao sistema UsbPort
 public class HAL {
@@ -8,14 +9,11 @@ public class HAL {
 
     public static void main(String[] args){
         init();
-        clrBits(0xff);
-/*        KBD.init();
-        while (true){
-            char key = 0;
-            key = KBD.getKey();
-                    //KBD.waitKey(System.currentTimeMillis());
-            if (key!=0) System.out.println(key);
-        }*/
+        //writeBits(0x80,0x40);
+        while(true){
+            System.out.println(readBits(0xff));
+            Time.sleep(100);
+        }
     }
 
     // Inicia a classe

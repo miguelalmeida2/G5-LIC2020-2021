@@ -100,7 +100,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
 
     public static void specialChar(){
         //writeCMD(0x30);
-        writeCMD( 0x40+(0*8));
+        writeCMD( 0x40+(1*8));
         for(int i = 0; i < 8; i++) writeByte(true,TUI.specialChar[i]);
         writeByte(true,1);
     }

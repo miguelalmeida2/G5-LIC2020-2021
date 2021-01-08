@@ -15,20 +15,6 @@ public class TUI {
 
     }
 
-    public static char readBets(){
-        char key = 0;
-        while (key == 0){
-            key = KBD.getKey();
-        }return key;
-    }
-
-    public static void waitforKey(char keyExpected){
-        char key = 0;
-        while (key != keyExpected){
-            key = KBD.getKey();
-        }
-    }
-
     public static void write(String text){
         LCD.write(text);
     }
@@ -47,7 +33,6 @@ public class TUI {
         if(digit < 10) spaces = 1;
         else if(digit < 100) spaces = 2;
         else spaces = 3;
-        //preciso de considerar superior a 999???
         return spaces;
     }
 
@@ -59,6 +44,9 @@ public class TUI {
 
     }
 
+    //create write on center
 
+
+    //create enable and disable cursor
 
 }
