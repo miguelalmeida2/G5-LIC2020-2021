@@ -11,8 +11,9 @@ public class HAL {
         init();
         //writeBits(0x80,0x40);
         while(true){
-            System.out.println(readBits(0xff));
+            System.out.println(readBits(0xffffff));
             Time.sleep(100);
+            //if(readBits(0xffffff)==)
         }
     }
 

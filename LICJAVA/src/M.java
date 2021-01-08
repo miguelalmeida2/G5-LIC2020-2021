@@ -16,11 +16,13 @@ public class M {
         while (true) {
             //RouletteGameApp.checkIfMaintainanceButtonOff();
             TUI.clearScreen();
-            TUI.write(" On Maintenance ");
+            RouletteGameApp.checkIfMaintainanceButtonOff();
 
+            TUI.write(" On Maintenance ");
 
             int i = b ? 1 : 0;
             TUI.write(KEYOPTIONS[i], 1, 0);
+
 
             pressed = KBD.waitKey(5000);
             if(pressed == '0') {

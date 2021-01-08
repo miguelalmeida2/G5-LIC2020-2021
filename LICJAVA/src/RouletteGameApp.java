@@ -13,7 +13,7 @@ public class RouletteGameApp {
     public static int MAX_ROL_NUM = 9;
     public static int WAIT_TIME = 5000; //5seg
 
-    public static int MAINTAINANCE_BUTTON = 0xe0;
+    public static int MAINTAINANCE_BUTTON = 0x80;
 
     public static int totalCoins = 10;
     public static int coinsAvailable = 0;
@@ -38,7 +38,8 @@ public class RouletteGameApp {
             coinsAvailable = (maintainance)? MAINTAINANCE_COINS : totalCoins;
             firstMenu();
             while (coinsAvailable == 0) ;
-            waitforPlay();
+            if(maintainance) waitforKey('*');
+            else waitforPlay();
             betsMenu();
 
             char currentKey = 0;
@@ -47,6 +48,7 @@ public class RouletteGameApp {
                 if (currentKey == '#') {
                     rouletteRoll();
                     calculateWinsAndLosses();
+                    if(!maintainance) totalCoins = coinsAvailable;
                     break;
                 }placeBet((int)(currentKey - '0'));
                 updateTotalCoins();
@@ -108,9 +110,10 @@ public class RouletteGameApp {
         for(int n=0;n<=9;n++){
             if(n == rouletteNumber) won = currentBets[n];
             else if(currentBets[n]>0) lost += currentBets[n];
-        }coinsAvailable += won;
-        if(won!=0) won++;
+        }
         coinsWonLoss = won-lost;
+        if(won!=0) won++;
+        coinsAvailable += won;
         winOrLoss = (coinsWonLoss > 0)?"W":"L";
         coinsWonLoss = Math.abs(coinsWonLoss);
         TUI.setCursor(0, 14-TUI.digitDim(coinsWonLoss));
@@ -136,15 +139,8 @@ public class RouletteGameApp {
         }
     }
 
+    public static void checkIfMaintainanceButtonOn(){ if(HAL.readBits(MAINTAINANCE_BUTTON) == MAINTAINANCE_BUTTON) M.maintainanceMenu(); }
 
-    //Problemas com entrada e saída do modo manutenção devido ao botão
-
-    public static void checkIfMaintainanceButtonOn(){
-        if(HAL.readBits(0xff) == MAINTAINANCE_BUTTON) M.maintainanceMenu();
-    }
-
-    public static void checkIfMaintainanceButtonOff(){
-        if(HAL.readBits(0xff) != MAINTAINANCE_BUTTON) RouletteGameApp.gameRotation(false);
-    }
+    public static void checkIfMaintainanceButtonOff(){ if(HAL.readBits(MAINTAINANCE_BUTTON) != MAINTAINANCE_BUTTON) RouletteGameApp.gameRotation(false); }
 
 }
