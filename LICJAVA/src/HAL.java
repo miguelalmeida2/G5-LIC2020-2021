@@ -9,6 +9,8 @@ public class HAL {
 
     public static void main(String[] args){
         init();
+        KBD.init();
+        RouletteDisplay.init();
         //writeBits(0x80,0x40);
         while(true){
             System.out.println(readBits(0xffffff));

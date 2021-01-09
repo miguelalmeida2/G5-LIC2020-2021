@@ -45,7 +45,9 @@ public class TUI {
     }
 
     //create write on center
+    public static void writeOnCenter(){
 
+    }
 
     //create enable and disable cursor
 
