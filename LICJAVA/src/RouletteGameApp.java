@@ -1,6 +1,4 @@
 import java.lang.Math;
-import isel.leic.utils.Time;
-
 
 public class RouletteGameApp {
 
@@ -8,17 +6,16 @@ public class RouletteGameApp {
 
     private static final int MAX_BET = 9;
     private static final int COIN_VALUE = 2;
-    private static final int MAINTAINANCE_COINS = 100;
+    private static final int MAINTENANCE_COINS = 100;
     private static final int MIN_ROL_NUM = 0;
     private static final int MAX_ROL_NUM = 9;
     public static final int WAIT_TIME = 5000; //5seg
 
-    public static int MAINTAINANCE_BUTTON = 0x80;
+    public static int MAINTENANCE_BUTTON = 0x80;
 
     private static int totalCoins = 10;
     private static int coinsAvailable = 0;
     public static int rouletteNumber;
-
 
     public static void main(String[] args){
         init();
@@ -33,30 +30,28 @@ public class RouletteGameApp {
         TUI.init();
     }
 
-    public static void gameRotation(boolean maintainance){
+    public static void gameRotation(boolean maintenance){
         while(true) {
-            coinsAvailable = (maintainance)? MAINTAINANCE_COINS : totalCoins;
+            coinsAvailable = (maintenance)? MAINTENANCE_COINS : totalCoins;
             firstMenu();
             while (coinsAvailable == 0) ;
-            if(maintainance) waitforKey('*');
+            if(maintenance) waitforKey('*');
             else waitforPlay();
             betsMenu();
-
             char currentKey = 0;
             while (true) {
                 currentKey = readKey();
                 if (currentKey == '#') {
                     rouletteRoll();
                     calculateWinsAndLosses();
-                    if(!maintainance) totalCoins = coinsAvailable;
+                    if(!maintenance) totalCoins = coinsAvailable;
                     break;
                 }placeBet((int)(currentKey - '0'));
                 updateTotalCoins();
-            } //RouletteDisplay.blinkNumber(rouletteNumber);
-
+            }
             clearPlacedBets();
             RouletteDisplay.clearDisplay();
-            if(maintainance) break;
+            if(maintenance) break;
         }
     }
 
@@ -64,8 +59,7 @@ public class RouletteGameApp {
         TUI.clearScreen();
         TUI.write(" Roulette Game  ",0,0);
         TUI.setCursor(1,0);
-
-        for(int i=0;i<=3;i++){
+        for(int i=0;i<3;i++){
             TUI.write(" " + ((char)(i+'1')) + " ");
             LCD.customChar(i);
         }
@@ -85,7 +79,6 @@ public class RouletteGameApp {
         rouletteNumber= (int)(Math.random()*(MAX_ROL_NUM - MIN_ROL_NUM +1));
         System.out.println(rouletteNumber);
         RouletteDisplay.animation(rouletteNumber);
-
     }
 
     public static void updateTotalCoins(){
@@ -108,7 +101,6 @@ public class RouletteGameApp {
             TUI.write(String.valueOf(++currentBets[bet]));
         }
     }
-    
 
     public static void clearPlacedBets(){ for(int n=0;n<=9;n++) currentBets[n] = 0; }
 
@@ -119,8 +111,8 @@ public class RouletteGameApp {
             if(n == rouletteNumber) won = currentBets[n];
             else if(currentBets[n]>0) lost += currentBets[n];
         }
+        if(won!=0) won*=2;
         coinsWonLoss = won-lost;
-        if(won!=0) won++;
         coinsAvailable += won;
         winOrLoss = (coinsWonLoss > 0)?"W":"L";
         coinsWonLoss = Math.abs(coinsWonLoss);
@@ -144,12 +136,11 @@ public class RouletteGameApp {
         char key = 0;
         while (key != '*'){
             key = KBD.getKey();
-            checkIfMaintainanceButtonOn();
+            checkIfMaintenanceButtonOn();
         }
     }
 
-    public static void checkIfMaintainanceButtonOn(){ if(HAL.readBits(MAINTAINANCE_BUTTON) == MAINTAINANCE_BUTTON) M.maintainanceMenu(); }
+    public static void checkIfMaintenanceButtonOn(){ if(HAL.readBits(MAINTENANCE_BUTTON) == MAINTENANCE_BUTTON) M.maintenanceMenu(); }
 
-    public static void checkIfMaintainanceButtonOff(){ if(HAL.readBits(MAINTAINANCE_BUTTON) != MAINTAINANCE_BUTTON) RouletteGameApp.gameRotation(false); }
-
+    public static void checkIfMaintenanceButtonOff(){ if(HAL.readBits(MAINTENANCE_BUTTON) != MAINTENANCE_BUTTON) RouletteGameApp.gameRotation(false); }
 }

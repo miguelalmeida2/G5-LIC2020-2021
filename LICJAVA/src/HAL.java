@@ -1,23 +1,10 @@
 import isel.leic.UsbPort;
-import isel.leic.utils.Time;
 
 // Virtualiza o acesso ao sistema UsbPort
 public class HAL {
 
     private static int lastValue;
     public static final boolean simulation = true;
-
-    public static void main(String[] args){
-        init();
-        KBD.init();
-        RouletteDisplay.init();
-        //writeBits(0x80,0x40);
-        while(true){
-            System.out.println(readBits(0xffffff));
-            Time.sleep(100);
-            //if(readBits(0xffffff)==)
-        }
-    }
 
     // Inicia a classe
     public static void init() { out(lastValue = 0); }
@@ -34,8 +21,6 @@ public class HAL {
 
     // Escreve nos bits representados por mask o valor de value
     public static void writeBits(int mask, int value) {
-       /*lastValue = (mask & value) | (~mask & lastValue);
-       out(lastValue);*/
         clrBits(mask);
         setBits(value & mask);
     }

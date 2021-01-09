@@ -2,17 +2,11 @@ import isel.leic.utils.Time;
 
 public class LCD { // Escreve no LCD usando a interface a 4 bits.
 
-    public static void main(String[] args){
-        HAL.init();
-        init();
-
-        customChar(0);
-        customChar(1);
-        customChar(2);
-    }
-
-    private static final int LINES = 2, COLS = 16; // Dimensão do display.
+    public static final int LINES = 2, COLS = 16; // Dimensão do display.
     private static final int NIBBLE_SIZE = 4;
+    private static final int Cursor_ON = 0xf;
+    private static final int CURSOR_OFF = 0xc;
+
 
     // Define se a interface com o LCD é série ou paralela
     private static final boolean SERIAL_INTERFACE = false;
@@ -31,10 +25,6 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
         writeCMD(0x01);
         writeCMD(0x06);
         writeCMD(0x0F);
-
-        specialChar(0);
-        specialChar(1);
-        specialChar(2);
     }
 
     // Escreve um nibble de comando/dados no LCD em paralelo
@@ -107,14 +97,22 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
 
     public static void specialChar(int charNum){
         writeCMD( 0x40+(charNum*8));
-
         for(int i = 0; i < 8; i++) {
             writeByte(true,TUI.specialChar[i+(charNum*8)]);
         }
     }
 
     public static void customChar(int charNum){
-        //cursor(0,charNum);
         writeByte(true,charNum);
+    }
+
+    public static void customChar(int charNum,int line,int col){
+        cursor(line,col);
+        writeByte(true,charNum);
+    }
+
+    public static void displayCursor(boolean cursor){
+        if (cursor) writeCMD(Cursor_ON);
+        else writeCMD(CURSOR_OFF);
     }
 }

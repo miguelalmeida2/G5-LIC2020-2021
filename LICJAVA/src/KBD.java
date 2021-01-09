@@ -1,16 +1,5 @@
 public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’*’ ou NONE.
 
-    public static void main(String[] args){
-        HAL.init();
-        KBD.init();
-        char key;
-        HAL.clrBits(ACK_MASK);
-        while (true){
-            key = getKey();
-            if (key != NONE) System.out.println("k " + key);
-        }
-    }
-
     private static final char NONE = 0;
     private static char Key = NONE;
     private final static int KVAL_MASK = 0x10; // 0001 0000
@@ -23,24 +12,19 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
 
     // Inicia a classe
     public static void init() {
-        boolean simulation = true;
-        keyboard = (simulation) ? keyboard_simulation :keyboard_hardware;
+        keyboard = (HAL.simulation) ? keyboard_simulation :keyboard_hardware;
     }
 
     // Retorna de imediato a tecla premida ou NONE se não há tecla premida.
     public static char getKey() {
         char key = NONE;
-        if(HAL.isBit(KVAL_MASK)) { //verifica se Kval ativo
-
-            System.out.println("bits " + HAL.readBits(KBD_MASK));
-
+        if(HAL.isBit(KVAL_MASK)) {
             key = keyboard[KBD_MASK & HAL.readBits(KBD_MASK)];
-            HAL.setBits(ACK_MASK); //ativa acknowledge
+            HAL.setBits(ACK_MASK);
             while (HAL.isBit(KVAL_MASK)) ;
             HAL.clrBits(ACK_MASK);
         }return key;
     }
-
 
     // Retorna quando a tecla é premida ou NONE após decorrido ‘timeout’ milisegundos.
     public static char waitKey(long timeout) {
