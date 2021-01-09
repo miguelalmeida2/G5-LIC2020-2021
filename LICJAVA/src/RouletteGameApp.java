@@ -6,17 +6,17 @@ public class RouletteGameApp {
 
     public static int[] currentBets = {0,0,0,0,0,0,0,0,0,0};
 
-    public static int MAX_BET = 9;
-    public static int COIN_VALUE = 2;
-    public static int MAINTAINANCE_COINS = 100;
-    public static int MIN_ROL_NUM = 0;
-    public static int MAX_ROL_NUM = 9;
-    public static int WAIT_TIME = 5000; //5seg
+    private static final int MAX_BET = 9;
+    private static final int COIN_VALUE = 2;
+    private static final int MAINTAINANCE_COINS = 100;
+    private static final int MIN_ROL_NUM = 0;
+    private static final int MAX_ROL_NUM = 9;
+    public static final int WAIT_TIME = 5000; //5seg
 
     public static int MAINTAINANCE_BUTTON = 0x80;
 
-    public static int totalCoins = 10;
-    public static int coinsAvailable = 0;
+    private static int totalCoins = 10;
+    private static int coinsAvailable = 0;
     public static int rouletteNumber;
 
 
@@ -54,7 +54,6 @@ public class RouletteGameApp {
                 updateTotalCoins();
             } //RouletteDisplay.blinkNumber(rouletteNumber);
 
-            //Time.sleep(WAIT_TIME);
             clearPlacedBets();
             RouletteDisplay.clearDisplay();
             if(maintainance) break;
@@ -63,9 +62,13 @@ public class RouletteGameApp {
 
     public static void firstMenu(){
         TUI.clearScreen();
-        TUI.write(" Roulette Game  ");
+        TUI.write(" Roulette Game  ",0,0);
         TUI.setCursor(1,0);
-        TUI.write(" 1 X 2 X 3 X");
+
+        for(int i=0;i<=3;i++){
+            TUI.write(" " + ((char)(i+'1')) + " ");
+            LCD.customChar(i);
+        }
         TUI.setCursor(1,15-TUI.digitDim(coinsAvailable));
         TUI.write("$" + coinsAvailable);
     }
@@ -105,6 +108,7 @@ public class RouletteGameApp {
             TUI.write(String.valueOf(++currentBets[bet]));
         }
     }
+    
 
     public static void clearPlacedBets(){ for(int n=0;n<=9;n++) currentBets[n] = 0; }
 

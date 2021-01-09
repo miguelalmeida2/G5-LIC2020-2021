@@ -5,7 +5,10 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     public static void main(String[] args){
         HAL.init();
         init();
-        specialChar();
+
+        customChar(0);
+        customChar(1);
+        customChar(2);
     }
 
     private static final int LINES = 2, COLS = 16; // Dimensão do display.
@@ -28,6 +31,10 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
         writeCMD(0x01);
         writeCMD(0x06);
         writeCMD(0x0F);
+
+        specialChar(0);
+        specialChar(1);
+        specialChar(2);
     }
 
     // Escreve um nibble de comando/dados no LCD em paralelo
@@ -98,23 +105,16 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
         cursor(line, col);
     }
 
-    public static void specialChar(){
-        //writeCMD(0x30);
-        writeCMD( 0x40+(1*8));
-        for(int i = 0; i < 8; i++) writeByte(true,TUI.specialChar[i]);
-        writeByte(true,1);
+    public static void specialChar(int charNum){
+        writeCMD( 0x40+(charNum*8));
+
+        for(int i = 0; i < 8; i++) {
+            writeByte(true,TUI.specialChar[i+(charNum*8)]);
+        }
     }
 
-        /*writeByte(true,0b00000111);
-        writeByte(true,0b00001000);
-        writeByte(true,0b00011110);
-        writeByte(true,0b00001000);
-
-        writeByte(true,0b00011110);
-        writeByte(true,0b00001000);
-        writeByte(true,0b00000111);
-        writeByte(true,0b00000000);*/
-
-        //writeByte(true,1);
-        //}
+    public static void customChar(int charNum){
+        //cursor(0,charNum);
+        writeByte(true,charNum);
+    }
 }
