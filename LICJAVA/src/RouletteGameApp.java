@@ -51,7 +51,7 @@ public class RouletteGameApp {
             }
             clearPlacedBets();
             RouletteDisplay.clearDisplay();
-            if(maintenance) break;
+            if(maintenance) M.maintenanceMenu();
         }
     }
 
