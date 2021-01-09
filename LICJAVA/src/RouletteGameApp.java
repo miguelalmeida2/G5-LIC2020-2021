@@ -2,16 +2,15 @@ import java.lang.Math;
 
 public class RouletteGameApp {
 
-    public static int[] currentBets = {0,0,0,0,0,0,0,0,0,0};
-
     private static final int MAX_BET = 9;
     private static final int COIN_VALUE = 2;
     private static final int MAINTENANCE_COINS = 100;
     private static final int MIN_ROL_NUM = 0;
     private static final int MAX_ROL_NUM = 9;
-    public static final int WAIT_TIME = 5000; //5seg
 
     public static int MAINTENANCE_BUTTON = 0x80;
+
+    public static int[] currentBets = {0,0,0,0,0,0,0,0,0,0};
 
     private static int totalCoins = 10;
     private static int coinsAvailable = 0;

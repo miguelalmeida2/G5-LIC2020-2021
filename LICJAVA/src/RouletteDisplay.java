@@ -13,7 +13,7 @@ public class RouletteDisplay {
 
     private static final int WAIT_TIME = 300;
     private static final int WAIT_TIME_NUMBER = 200;
-
+    private static final int WAIT_TIME_HALF_SECOND = 500;
 
     // Inicia a classe, estabelecendo os valores iniciais.
     public static void init() {
@@ -53,7 +53,7 @@ public class RouletteDisplay {
 
     public static void blinkNumber(int number){
         for(int i=0; i < 10;i++){
-            Time.sleep(500);
+            Time.sleep(WAIT_TIME_HALF_SECOND);
             showNumber(DISPLAY_OFF);
             Time.sleep(WAIT_TIME_NUMBER);
             showNumber(number);

@@ -1,6 +1,6 @@
 public class TUI {
 
-    public static final int OFFSET = -1;
+    private static final int OFFSET = -1;
 
     public static int[] specialChar =
             {0,0b00011111,0b00010001,0b00010101,0b00010001,0b00011111,0,0,  // 0
@@ -27,7 +27,6 @@ public class TUI {
         displayCursor(false);
     }
 
-    //create write on center
     public static void writeOnCenter(String txt, int line){
         setCursor(line,0);
         int i = 0;
@@ -52,7 +51,6 @@ public class TUI {
         LCD.setCursor(line, col);
     }
 
-    //create enable and disable cursor
     public static void displayCursor(boolean cursor){
         LCD.displayCursor(cursor);
     }
