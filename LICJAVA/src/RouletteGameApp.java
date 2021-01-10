@@ -76,8 +76,8 @@ public class RouletteGameApp {
         TUI.write("$" + coinsAvailable);
     }
 
-    public static void bet(){
-        char currentKey = readKey();
+    public static void bet(int time){
+        char currentKey = KBD.waitKey(time);
         placeBet(currentKey - '0');
         updateTotalCoins();
     }

@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Simul.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/M.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/M.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/RouletteDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/RouletteDisplay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/RouletteGameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/RouletteGameApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/TUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/TUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KBD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/M.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RouletteDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RouletteGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteGameApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,7 +5,6 @@ public class M {
     private static final String[] KEYOPTIONS = {"0-Stats #-Count ", "*-Play  8-ShutD "};
 
     public static void maintenanceMenu() {
-        //RouletteGameApp.MAINTENANCE_COINS=100;
         RouletteGameApp.checkIfMaintenanceButtonOff();
 
         char pressed;
