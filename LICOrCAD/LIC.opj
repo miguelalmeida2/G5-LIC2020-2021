@@ -1,0 +1,66 @@
+(ExpressProject "LIC"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\lic.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (ATF750C
+      (FullPartName "ATF750C.Normal")
+      (LibraryName "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\ISEL_LIB.OLB")
+      (DeviceIndex "0"))
+    (74574
+      (FullPartName "74574.Normal")
+      (LibraryName "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\ISEL_LIB.OLB")
+      (DeviceIndex "0"))
+    (4x4Keyboard
+      (FullPartName "4x4Keyboard.Normal")
+      (LibraryName "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\ISEL_LIB.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LCD_2_16
+      (FullPartName "LCD_2_16.Normal")
+      (LibraryName "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\ISEL_LIB.OLB")
+      (DeviceIndex "0"))
+    (LTS-4301JF
+      (FullPartName "LTS-4301JF.Normal")
+      (LibraryName "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\ISEL_LIB.OLB")
+      (DeviceIndex "0"))
+    (RD47seg
+      (FullPartName "RD47seg.Normal")
+      (LibraryName "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\ISEL_LIB.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\user\Desktop\Git\Java-LIC\LICOrCAD")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\lic.dsn")
+      (Path "Design Resources" ".\lic.dsn" "SCHEMATIC1")
+      (Select "Design Resources" ".\lic.dsn" "SCHEMATIC1" "Jogo Roleta"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 461"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 232 1085 -2 784")
+        (Scroll "-352 0")
+        (Zoom "109")
+        (Occurrence "/"))
+      (Path "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\LIC.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Jogo Roleta"))))
