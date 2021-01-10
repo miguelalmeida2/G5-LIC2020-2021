@@ -4,8 +4,12 @@ import isel.leic.utils.*;
 // Controla o Roulette Display.
 public class RouletteDisplay {
 
-    private static final int MAX_ANIMATION_TIME = 20;
-    private static final int MIN_ANIMATION_TIME = 7;
+    private static final int MAX_ANIMATION_TIME_ROTATINGSEGMENT = 15;
+    private static final int MIN_ANIMATION_TIME_ROTATINGSEGMENT = 5;
+    private static final int MAX_ANIMATION_TIME_ROTATINGNUMBERS = 15;
+    private static final int MIN_ANIMATION_TIME_ROTATINGNUMBERS = 5;
+    private static final int LAST_NUMBER_SHOW_TIME = 5;
+    private static final int LASTBUTONE_NUMBER_SHOW_TIME = 2;
 
     private static final int WR_BIT = 0x40;
     private static final int ANIM_BIT = 0x0a;
@@ -14,6 +18,9 @@ public class RouletteDisplay {
     private static final int WAIT_TIME = 300;
     private static final int WAIT_TIME_NUMBER = 200;
     private static final int WAIT_TIME_HALF_SECOND = 500;
+    private static final int WAIT_TIME_ONE_AND_HALF_SECOND = 1500;
+    private static final int WAIT_TIME_TWO_AND_HALF_SECOND = 2500;
+
 
     // Inicia a classe, estabelecendo os valores iniciais.
     public static void init() {
@@ -27,9 +34,8 @@ public class RouletteDisplay {
         HAL.setBits(WR_BIT);
     }
 
-    // Envia comando de animação
-    public static void animation(int rouletteNumber) {
-        int animationDuration = (int) (Math.random() * (MAX_ANIMATION_TIME - MIN_ANIMATION_TIME + 1) * 1000);
+    public static void animationRotatingSegment(){
+        int animationDuration = (int) (Math.random() * (MAX_ANIMATION_TIME_ROTATINGSEGMENT - MIN_ANIMATION_TIME_ROTATINGSEGMENT + 1) * 1000);
         int stopAnimationTime = (int) (Time.getTimeInMillis() + animationDuration);
         int i;
         while (true) {
@@ -38,17 +44,35 @@ public class RouletteDisplay {
                 Time.sleep(WAIT_TIME);
             }if(stopAnimationTime < (int)Time.getTimeInMillis()) break;
         }
-        int n=0;
-        while (true) {
-            for (; n < 10; n++) {
-                showNumber(n);
-                Time.sleep(WAIT_TIME_NUMBER);
-                if(rouletteNumber == n) {
-                    Time.sleep(WAIT_TIME);
-                    break;
-                }
-            }if(rouletteNumber == n) break;
+    }
+
+    public static void animationRotatingNumbers(int rouletteNumber) {
+        int animationDuration = 1000;
+        int animationTimeForFirstNumbers;
+        if(rouletteNumber>=6) animationTimeForFirstNumbers = animationDuration/(rouletteNumber-3);
+        else {
+            animationTimeForFirstNumbers = animationDuration / (rouletteNumber + 10 - 3);
+            animationCompleteRotation(rouletteNumber, animationTimeForFirstNumbers);
         }
+        for(int i = 0;i <= rouletteNumber;++i) {
+            if ((rouletteNumber-3) > 0) showNumberAnim(i,animationTimeForFirstNumbers);
+            else if ((rouletteNumber-2) > 0) showNumberAnim(i,WAIT_TIME_HALF_SECOND);
+            else if((rouletteNumber-1) > 0) showNumberAnim(i,WAIT_TIME_ONE_AND_HALF_SECOND);
+            else if(i <= rouletteNumber) showNumberAnim(i,WAIT_TIME_TWO_AND_HALF_SECOND);
+        }
+    }
+
+    private static void animationCompleteRotation(int rouletteNumber,int animationTimeForFirstNumbers){
+        for(int i = 0;i <= 9;++i) {
+            if ((i+3) <= (rouletteNumber+10)) showNumberAnim(i, animationTimeForFirstNumbers);
+            else if ((i+2) <= (rouletteNumber+10)) showNumberAnim(i, WAIT_TIME_HALF_SECOND);
+            else if ((i+1) <= (rouletteNumber+10)) showNumberAnim(i, WAIT_TIME_ONE_AND_HALF_SECOND);
+        }
+    }
+
+    public static void showNumberAnim(int number,int time){
+        showNumber(number);
+        Time.sleep(time);
     }
 
     public static void blinkNumber(int number){

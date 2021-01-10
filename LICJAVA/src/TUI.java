@@ -40,7 +40,7 @@ public class TUI {
     }
 
     public static int digitDim(int digit){
-        int spaces = 0;
+        int spaces;
         if(digit < 10) spaces = 1;
         else if(digit < 100) spaces = 2;
         else spaces = 3;

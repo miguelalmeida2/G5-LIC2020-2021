@@ -27,9 +27,9 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
     // Retorna quando a tecla é premida ou NONE após decorrido ‘timeout’ milisegundos.
     public static char waitKey(long timeout) {
         timeout += System.currentTimeMillis();
-        char key = 0;
+        char key;
         do {
-            key =getKey();
+            key = getKey();
             if (key != 0) return key;
         } while (System.currentTimeMillis() < timeout);
         return 0;

@@ -5,13 +5,15 @@ public class M {
     private static final String[] KEYOPTIONS = {"0-Stats #-Count ", "*-Play  8-ShutD "};
 
     public static void maintenanceMenu() {
-        char pressed = 0;
+        //RouletteGameApp.MAINTENANCE_COINS=100;
+        RouletteGameApp.checkIfMaintenanceButtonOff();
+
+        char pressed;
         boolean b = false;
         TUI.clearScreen();
         TUI.write(" On Maintenance ");
 
         while (true) {
-
             RouletteGameApp.checkIfMaintenanceButtonOff();
             int i = b ? 1 : 0;
             TUI.write(KEYOPTIONS[i], 1, 0);

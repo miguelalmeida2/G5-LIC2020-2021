@@ -4,9 +4,9 @@ public class RouletteGameApp {
 
     private static final int MAX_BET = 9;
     private static final int COIN_VALUE = 2;
-    private static final int MAINTENANCE_COINS = 100;
     private static final int MIN_ROL_NUM = 0;
     private static final int MAX_ROL_NUM = 9;
+    public static final int MAINTENANCE_COINS = 100;
 
     public static int MAINTENANCE_BUTTON = 0x80;
 
@@ -14,7 +14,7 @@ public class RouletteGameApp {
 
     private static int totalCoins = 10;
     private static int coinsAvailable = 0;
-    public static int rouletteNumber;
+    private static int rouletteNumber;
 
     public static void main(String[] args){
         init();
@@ -32,21 +32,23 @@ public class RouletteGameApp {
     public static void gameRotation(boolean maintenance){
         while(true) {
             coinsAvailable = (maintenance)? MAINTENANCE_COINS : totalCoins;
-            firstMenu();
+            if(!maintenance){firstMenu();
             while (coinsAvailable == 0) ;
-            if(maintenance) waitforKey('*');
-            else waitforPlay();
+                waitforPlay();
+            }
             betsMenu();
-            char currentKey = 0;
+            char currentKey;
             while (true) {
                 currentKey = readKey();
+                placeBet(currentKey - '0');
+                updateTotalCoins();
                 if (currentKey == '#') {
                     rouletteRoll();
+                    RouletteDisplay.animationRotatingNumbers(rouletteNumber);
                     calculateWinsAndLosses();
                     if(!maintenance) totalCoins = coinsAvailable;
                     break;
-                }placeBet((int)(currentKey - '0'));
-                updateTotalCoins();
+                }
             }
             clearPlacedBets();
             RouletteDisplay.clearDisplay();
@@ -74,10 +76,15 @@ public class RouletteGameApp {
         TUI.write("$" + coinsAvailable);
     }
 
+    public static void bet(){
+        char currentKey = readKey();
+        placeBet(currentKey - '0');
+        updateTotalCoins();
+    }
+
     public static void rouletteRoll(){
         rouletteNumber= (int)(Math.random()*(MAX_ROL_NUM - MIN_ROL_NUM +1));
-        System.out.println(rouletteNumber);
-        RouletteDisplay.animation(rouletteNumber);
+        RouletteDisplay.animationRotatingSegment();
     }
 
     public static void updateTotalCoins(){
@@ -115,8 +122,7 @@ public class RouletteGameApp {
         coinsAvailable += won;
         winOrLoss = (coinsWonLoss > 0)?"W":"L";
         coinsWonLoss = Math.abs(coinsWonLoss);
-        TUI.setCursor(0, 14-TUI.digitDim(coinsWonLoss));
-        TUI.write(winOrLoss + "$" + coinsWonLoss);
+        TUI.write(winOrLoss + "$" + coinsWonLoss,0,14-TUI.digitDim(coinsWonLoss));
         RouletteDisplay.blinkNumber(rouletteNumber);
     }
 
