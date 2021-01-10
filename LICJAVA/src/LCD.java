@@ -105,10 +105,6 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
         writeCMD(CLEAR_DISPLAY); // Clear Display e Coloca o cursor na posicao 0,0
     }
 
-    public static void setCursor(int line, int col){
-        cursor(line, col);
-    }
-
     public static void specialChar(int charNum){
         writeCMD( SET_CGRAM_ADRESS+(charNum*BYTE_SIZE));
         for(int i = 0; i < BYTE_SIZE; i++) {

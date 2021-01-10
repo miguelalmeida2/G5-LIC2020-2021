@@ -48,7 +48,7 @@ public class TUI {
     }
 
     public static void setCursor(int line, int col){
-        LCD.setCursor(line, col);
+        LCD.cursor(line, col);
     }
 
     public static void displayCursor(boolean cursor){
