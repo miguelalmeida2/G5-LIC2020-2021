@@ -41,7 +41,6 @@ public class RouletteDisplay {
         while (true) {
             for (i = 0; i < 6 & stopAnimationTime > (int)Time.getTimeInMillis(); i++) {
                 showNumber(ANIM_BIT + i);
-                //Time.sleep(WAIT_TIME);
                 RouletteGameApp.bet(WAIT_TIME);
             }if(stopAnimationTime < (int)Time.getTimeInMillis()) break;
         }
