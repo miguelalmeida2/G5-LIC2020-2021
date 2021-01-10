@@ -10,9 +10,9 @@ public class TUI {
 
     public static void init(){
         //grava carateres especiais
-        LCD.specialChar(0);
-        LCD.specialChar(1);
-        LCD.specialChar(2);
+        LCD.saveCustomChar(0);
+        LCD.saveCustomChar(1);
+        LCD.saveCustomChar(2);
         displayCursor(false);
     }
 
