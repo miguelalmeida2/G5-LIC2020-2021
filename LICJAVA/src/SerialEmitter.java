@@ -15,7 +15,7 @@ public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
         int p = 0;
         int value;
         int LnD = (addr.ordinal() == Destination.RDisplay.ordinal()) ? 0x00 : 0x01;
-        SDX = data << 1 | LnD;
+        SDX = (data << 1) | LnD;
 
         HAL.setBits(SOCsel);
         for (int i = 0; i <= 5; ++i){
