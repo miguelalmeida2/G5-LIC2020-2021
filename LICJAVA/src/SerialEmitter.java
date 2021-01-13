@@ -3,7 +3,7 @@
 public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
     public static enum Destination {RDisplay,LCD};
     private static int SDX;
-    private static int SOCsel = 0x02;
+    private static final int SOCSEL = 0x03;
     // Inicia a classe
     public static void init(){
         HAL.writeBits(0x0F, 0);
@@ -17,7 +17,7 @@ public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
         int LnD = (addr.ordinal() == Destination.RDisplay.ordinal()) ? 0x00 : 0x01;
         SDX = (data << 1) | LnD;
 
-        HAL.setBits(SOCsel);
+        HAL.setBits(SOCSEL);
         for (int i = 0; i <= 5; ++i){
             value = SDX & 0x01;
             if (value == 0x01){
@@ -32,10 +32,10 @@ public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
         if ( p % 2 != 0) HAL.setBits(0x01);
         SCLK();
         HAL.clrBits(0x01);
-        HAL.clrBits(SOCsel);
+        HAL.clrBits(SOCSEL);
     }
     private static void SCLK(){
-        HAL.setBits(0x03);
-        HAL.clrBits(0x03);
+        HAL.setBits(0x02);
+        HAL.clrBits(0x02);
     }
 }
