@@ -4,7 +4,7 @@ public class CoinAcceptor {
     private final static int COIN_ACCEPT_MASK=0x40;
 
     public static boolean checkForInsertedCoin(){
-        while (HAL.isBit(COIN_MASK)) {
+        if(HAL.isBit(COIN_MASK)) {
             HAL.setBits(COIN_ACCEPT_MASK);
             HAL.clrBits(COIN_ACCEPT_MASK);
             return true;
