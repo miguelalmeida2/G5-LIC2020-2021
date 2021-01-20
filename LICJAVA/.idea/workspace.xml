@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.history/8e/f075275e574d001b1dd1d402c37fc34c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.history/df/50524982394d001b1dd1d402c37fc34c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.projects/Key Control/.indexes/e4/history.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.projects/KeyBuffer/.indexes/e4/history.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.root/12.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/RouletteDisplay/output/rouletteDisplay.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/RouletteDisplay/output/rouletteDisplay.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/RouletteDisplay/output/rouletteDisplay.jed" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/RouletteDisplay/output/rouletteDisplay.jed" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Simul.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USB_PORT.properties" beforeDir="false" afterPath="$PROJECT_DIR$/USB_PORT.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/HAL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/HAL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/RouletteDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/RouletteDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/TUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/TUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HAL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RouletteDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICOrCAD/LIC.opj" beforeDir="false" afterPath="$PROJECT_DIR$/../LICOrCAD/LIC.opj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +61,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Application.RouletteGameApp">
+  <component name="RunManager" selected="Application.LCD">
     <configuration name="HAL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HAL" />
       <module name="LICJAVA" />
@@ -77,10 +99,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RouletteGameApp" />
-        <item itemvalue="Application.TUI" />
         <item itemvalue="Application.LCD" />
+        <item itemvalue="Application.RouletteGameApp" />
         <item itemvalue="Application.RouletteDisplay" />
+        <item itemvalue="Application.TUI" />
         <item itemvalue="Application.HAL" />
       </list>
     </recent_temporary>

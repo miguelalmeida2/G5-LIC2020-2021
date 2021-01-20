@@ -10,7 +10,7 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
 
     // Inicia a classe
     public static void init() {
-        keyboard = (HAL.simulation) ? keyboard_simulation :keyboard_hardware;
+        keyboard = keyboard_simulation;
     }
 
     // Retorna de imediato a tecla premida ou NONE se não há tecla premida.

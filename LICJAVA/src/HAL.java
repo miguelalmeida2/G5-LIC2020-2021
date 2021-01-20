@@ -4,7 +4,6 @@ import isel.leic.UsbPort;
 public class HAL {
 
     private static int lastValue;
-    public static final boolean simulation = true;
 
     // Inicia a classe
     public static void init() { out(lastValue = 0); }

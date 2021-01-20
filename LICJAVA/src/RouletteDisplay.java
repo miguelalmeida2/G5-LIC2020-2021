@@ -21,7 +21,12 @@ public class RouletteDisplay {
     private static final int WAIT_TIME_ONE_AND_HALF_SECOND = 1500;
     private static final int WAIT_TIME_TWO_AND_HALF_SECOND = 2500;
 
-
+    public static void main(String[] args) {
+        HAL.init();
+        init();
+        //showNumber(5);
+        animationRotatingSegment();
+    }
     // Inicia a classe, estabelecendo os valores iniciais.
     public static void init() {
         clearDisplay();

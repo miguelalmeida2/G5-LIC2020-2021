@@ -22,6 +22,13 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     private static final boolean SERIAL_INTERFACE = false;    // Define se a interface com o LCD é série ou paralela
 
     // Envia a sequência de iniciação para comunicação a 4 bits.
+    public static void main(String[] args) {
+        HAL.init();
+        init();
+        write("HELLO");
+        //write(" Roulette Game  ");
+
+    }
     public static void init() {
         Time.sleep(15);
         writeNibble(false,0x03);

@@ -1,7 +1,7 @@
 
 CUPL(WM)        5.0a  Serial# MW-10400000
 Device          v750c  Library DLIB-h-40-2
-Created         Tue Dec 29 02:55:56 2020
+Created         Mon Jan 18 19:38:29 2021
 Name            rouletteDisplay 
 Partno          00 
 Revision        01 
@@ -305,4 +305,4 @@ Location
 *L14368 01101101101101101101011011000000
 *L14432 00000110000001100000010000000000
 *C0CC5
-*2881
+*2892
