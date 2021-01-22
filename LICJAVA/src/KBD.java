@@ -1,3 +1,5 @@
+import isel.leic.utils.Time;
+
 public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’*’ ou NONE.
 
     private final static int KVAL_MASK = 0x10; // 0001 0000
@@ -8,6 +10,20 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
 
     private static char[] keyboard;
 
+    public static void main(String[] args) {
+        HAL.init();
+        init();
+        System.out.println(getKey());
+        //getKey();
+        /*char key = 'D';
+        char y = 'd';
+        while(key!=y){
+            y=getKey();
+            System.out.println("k = " + y);
+            Time.sleep(500);
+        }*/
+
+    }
     // Inicia a classe
     public static void init() {
         keyboard = keyboard_simulation;

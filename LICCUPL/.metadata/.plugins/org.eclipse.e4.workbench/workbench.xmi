@@ -329,7 +329,7 @@
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_adbZtwi2Eeuw7IubtUWSSw" elementId="org.eclipse.ui.editorss" selectedElement="_0IBX4El3Eeuzy4Lww5HSDQ">
       <children xsi:type="basic:PartSashContainer" xmi:id="_0IBX4El3Eeuzy4Lww5HSDQ" selectedElement="_0IBX4Ul3Eeuzy4Lww5HSDQ">
-        <children xsi:type="basic:PartStack" xmi:id="_MXCuMROiEeuXtsgxpAkHCA" elementId="PartStack@4599f10c" containerData="7532" selectedElement="_Kzj7sEl4Eeuzy4Lww5HSDQ">
+        <children xsi:type="basic:PartStack" xmi:id="_MXCuMROiEeuXtsgxpAkHCA" elementId="PartStack@4599f10c" containerData="7532" selectedElement="_yrnrUEl3Eeuzy4Lww5HSDQ">
           <tags>active</tags>
           <children xsi:type="basic:Part" xmi:id="_vawXgEl3Eeuzy4Lww5HSDQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="KeyControl.pld" closeable="true">
             <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;ps.edu.cupl.Cupl&quot; name=&quot;KeyControl.pld&quot; partName=&quot;KeyControl.pld&quot; title=&quot;KeyControl.pld&quot; tooltip=&quot;Key Control/src/KeyControl.pld&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Key Control/src/KeyControl.pld&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;81&quot; selectionOffset=&quot;427&quot; selectionTopPixel=&quot;258&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -344,18 +344,18 @@
             <tags>ps.edu.cupl.Cupl</tags>
           </children>
           <children xsi:type="basic:Part" xmi:id="_yrnrUEl3Eeuzy4Lww5HSDQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="KeyBuffer.pld" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;ps.edu.cupl.Cupl&quot; name=&quot;KeyBuffer.pld&quot; partName=&quot;KeyBuffer.pld&quot; title=&quot;KeyBuffer.pld&quot; tooltip=&quot;KeyBuffer/src/KeyBuffer.pld&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/KeyBuffer/src/KeyBuffer.pld&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1521&quot; selectionTopPixel=&quot;837&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;ps.edu.cupl.Cupl&quot; name=&quot;KeyBuffer.pld&quot; partName=&quot;KeyBuffer.pld&quot; title=&quot;KeyBuffer.pld&quot; tooltip=&quot;KeyBuffer/src/KeyBuffer.pld&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/KeyBuffer/src/KeyBuffer.pld&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;275&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>removeOnHide</tags>
             <tags>ps.edu.cupl.Cupl</tags>
+            <tags>active</tags>
+            <tags>activeOnClose</tags>
           </children>
           <children xsi:type="basic:Part" xmi:id="_Kzj7sEl4Eeuzy4Lww5HSDQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="rouletteDisplay.pld" closeable="true">
             <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;ps.edu.cupl.Cupl&quot; name=&quot;rouletteDisplay.pld&quot; partName=&quot;rouletteDisplay.pld&quot; title=&quot;rouletteDisplay.pld&quot; tooltip=&quot;RouletteDisplay/src/rouletteDisplay.pld&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RouletteDisplay/src/rouletteDisplay.pld&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;278&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>removeOnHide</tags>
             <tags>ps.edu.cupl.Cupl</tags>
-            <tags>active</tags>
-            <tags>activeOnClose</tags>
           </children>
         </children>
         <children xsi:type="basic:PartStack" xmi:id="_0IBX4Ul3Eeuzy4Lww5HSDQ" elementId="PartStack@7927209f" containerData="2468" selectedElement="_adbYowi2Eeuw7IubtUWSSw">
@@ -575,7 +575,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_adbaJgi2Eeuw7IubtUWSSw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_VBCaMFm8EeuKy-Er9Dnlhg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_adcA8wi2Eeuw7IubtUWSSw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7nVOkFs9EeuLh7TCGdSVyQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_adcA8wi2Eeuw7IubtUWSSw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_adbaNAi2Eeuw7IubtUWSSw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -609,7 +609,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_adbaVAi2Eeuw7IubtUWSSw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_VBE2cVm8EeuKy-Er9Dnlhg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_adcAkwi2Eeuw7IubtUWSSw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7nXq0Vs9EeuLh7TCGdSVyQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_adcAkwi2Eeuw7IubtUWSSw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_adbaYAi2Eeuw7IubtUWSSw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

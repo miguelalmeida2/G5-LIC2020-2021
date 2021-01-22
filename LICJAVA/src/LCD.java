@@ -77,6 +77,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
          int lowData = (data & NIBBLE_MASK);                    //Parte Baixa do data
          writeNibble(rs,highData);
          writeNibble(rs,lowData);
+         Time.sleep(10);
     }
 
     // Escreve um comando no LCD

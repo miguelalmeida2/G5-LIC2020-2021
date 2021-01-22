@@ -1,7 +1,7 @@
 
 CUPL(WM)        5.0a  Serial# MW-10400000
 Device          v750c  Library DLIB-h-40-2
-Created         Sun Jan 03 00:05:20 2021
+Created         Wed Jan 20 17:54:18 2021
 Name            KeyBuffer 
 Partno          00 
 Revision        01 
@@ -189,4 +189,4 @@ Location
 *L14368 11011011111001111111111101000000
 *L14432 00000110000001100000010000000000
 *C4534
-*9735
+*9731
