@@ -5,6 +5,10 @@ public class HAL {
 
     private static int lastValue;
 
+    public static void main(String[] args) {
+        init();
+    }
+
     // Inicia a classe
     public static void init() { out(lastValue = 0); }
 

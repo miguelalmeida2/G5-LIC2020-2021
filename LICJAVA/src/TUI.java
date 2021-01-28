@@ -2,12 +2,6 @@ public class TUI {
 
     private static final int OFFSET = -1;
 
-    public static int[] specialChar =
-            {0,0b00011111,0b00010001,0b00010101,0b00010001,0b00011111,0,0,  // 0
-            0,0b00011111,0b00010101,0b00010001,0b00010101,0b00011111,0,0,   // 1
-            0,0b00011111,0b00010011,0b00010101,0b00011001,0b00011111,0,0};  // 2
-
-
     public static void init(){
         //grava carateres especiais
         LCD.saveCustomChar(0);

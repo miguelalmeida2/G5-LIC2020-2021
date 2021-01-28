@@ -6,15 +6,19 @@ public class RouletteGameApp {
     private static final int COIN_VALUE = 2;
     private static final int MIN_ROL_NUM = 0;
     private static final int MAX_ROL_NUM = 9;
-    public static final int MAINTENANCE_COINS = 100;
+    private static final int MAINTENANCE_COINS = 100;
 
-    public static int MAINTENANCE_BUTTON = 0x80;
+    private static final int MAINTENANCE_BUTTON = 0x80;
 
-    public static int[] currentBets = {0,0,0,0,0,0,0,0,0,0};
+    private static final int[] currentBets = {0,0,0,0,0,0,0,0,0,0};
+    public static final String[] KEYOPTIONS = {"0-Stats #-Count ", "*-Play  8-ShutD "};
 
     private static int totalCoins = 10;
     private static int coinsAvailable = 0;
     private static int rouletteNumber;
+
+    public static final int WAIT_TIME_5SEC = 5000; //5seg
+
 
     public static void main(String[] args){
         init();
@@ -28,6 +32,11 @@ public class RouletteGameApp {
         RouletteDisplay.init();
         TUI.init();
     }
+
+    public static int[] specialChar =
+            {0,0b00011111,0b00010001,0b00010101,0b00010001,0b00011111,0,0,  // 0
+            0,0b00011111,0b00010101,0b00010001,0b00010101,0b00011111,0,0,   // 1
+            0,0b00011111,0b00010011,0b00010101,0b00011001,0b00011111,0,0};  // 2
 
     public static void gameRotation(boolean maintenance){
         while(true) {
@@ -52,7 +61,7 @@ public class RouletteGameApp {
             }
             clearPlacedBets();
             RouletteDisplay.clearDisplay();
-            if(maintenance) M.maintenanceMenu();
+            if(maintenance) maintenanceOptions(M.maintenanceMenu());
         }
     }
 
@@ -145,7 +154,38 @@ public class RouletteGameApp {
         }
     }
 
-    public static void checkIfMaintenanceButtonOn(){ if(HAL.readBits(MAINTENANCE_BUTTON) == MAINTENANCE_BUTTON) M.maintenanceMenu(); }
+    public static void checkIfMaintenanceButtonOn(){
+        if(HAL.readBits(MAINTENANCE_BUTTON) == MAINTENANCE_BUTTON) {
+            maintenanceOptions(M.maintenanceMenu());}
 
-    public static void checkIfMaintenanceButtonOff(){ if(HAL.readBits(MAINTENANCE_BUTTON) != MAINTENANCE_BUTTON) RouletteGameApp.gameRotation(false); }
+    }
+
+    public static void checkIfMaintenanceButtonOff(){ if(HAL.readBits(MAINTENANCE_BUTTON) != MAINTENANCE_BUTTON) gameRotation(false); }
+
+    public static void maintenanceOptions(char pressed){
+        if(pressed == '0') {
+
+            //TO DO
+
+        }else if(pressed == '#'){
+
+            //TO DO
+
+        }else if(pressed == '*') gameRotation(true);
+        else if(pressed == '8') shutdownMenu();
+        checkIfMaintenanceButtonOn();
+
+    }
+
+    private static void shutdownMenu(){
+        TUI.write("    Shutdown    ",0,0);
+        TUI.write("5-Yes  other-No ",1,0);
+        char key = KBD.waitKey(WAIT_TIME_5SEC);
+        if (key == '5') {
+            System.exit(0);
+
+            //save scores and stats here
+
+        }M.maintenanceMenu();
+    }
 }

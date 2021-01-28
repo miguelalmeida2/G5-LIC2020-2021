@@ -6,11 +6,16 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     private static final int NIBBLE_SIZE = 4, BYTE_SIZE = 8;
     public static final int NIBBLE_MASK = 0x0f, NIBBLE_MASK_SIZE = 0x10;
 
+
+    private static final int FUNCTION_SET_TO8BIT = 0x03, FUNCTION_SET_TO4BIT = 0x02;
+
     private static final int FUNCTION_SET_2LINES = 0x28;
     private static final int DISPLAY_OFF = 0x08;
     private static final int CLEAR_DISPLAY = 0x01;
     private static final int ENTRY_MODE_SET_DIR_RIGHT = 0x06;
     private static final int SET_CGRAM_ADRESS = 0x40;
+
+    private static final int FIRST_INIT_TIME = 15, SECOND_INIT_TIME = 5, THIRD_INIT_TIME = 1, WRITEBYTE_SLEEP_TIME = 10;
 
     private static final int LINE0 = 0x00, LINE1 = 0x40;
 
@@ -25,18 +30,17 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     public static void main(String[] args) {
         HAL.init();
         init();
-        write("HELLO");
-        //write(" Roulette Game  ");
+        write(" Roulette Game  ");
 
     }
     public static void init() {
-        Time.sleep(15);
-        writeNibble(false,0x03);
-        Time.sleep(5);
-        writeNibble(false,0x03);
-        Time.sleep(1);
-        writeNibble(false,0x03);
-        writeNibble(false,0x02);
+        Time.sleep(FIRST_INIT_TIME);
+        writeNibble(false,FUNCTION_SET_TO8BIT);
+        Time.sleep(SECOND_INIT_TIME);
+        writeNibble(false,FUNCTION_SET_TO8BIT);
+        Time.sleep(THIRD_INIT_TIME);
+        writeNibble(false,FUNCTION_SET_TO8BIT);
+        writeNibble(false,FUNCTION_SET_TO4BIT);
         writeCMD(FUNCTION_SET_2LINES);
         writeCMD(DISPLAY_OFF);
         writeCMD(CLEAR_DISPLAY);
@@ -77,7 +81,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
          int lowData = (data & NIBBLE_MASK);                    //Parte Baixa do data
          writeNibble(rs,highData);
          writeNibble(rs,lowData);
-         Time.sleep(10);
+         Time.sleep(WRITEBYTE_SLEEP_TIME);
     }
 
     // Escreve um comando no LCD
@@ -116,7 +120,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     public static void saveCustomChar(int charNum){
         writeCMD( SET_CGRAM_ADRESS+(charNum*BYTE_SIZE));
         for(int i = 0; i < BYTE_SIZE; i++) {
-            writeByte(true,TUI.specialChar[i+(charNum*BYTE_SIZE)]);
+            writeByte(true,RouletteGameApp.specialChar[i+(charNum*BYTE_SIZE)]);
         }
     }
 
