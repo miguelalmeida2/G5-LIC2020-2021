@@ -6,6 +6,8 @@ public class CoinAcceptor {
     public static boolean checkForInsertedCoin(){
         if(HAL.isBit(COIN_MASK)) {
             HAL.setBits(COIN_ACCEPT_MASK);
+            while (HAL.isBit(COIN_MASK));
+
             HAL.clrBits(COIN_ACCEPT_MASK);
             return true;
         }
