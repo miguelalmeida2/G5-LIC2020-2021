@@ -5,15 +5,13 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
     private final static int KVAL_MASK = 0x10; // 0001 0000
     private final static int ACK_MASK = 0x80;  // 1000 0000
     private final static int KBD_MASK = 0x0F;  // 0000 1111
-    private final static char[] keyboard_simulation = {'1','4','7','*','2','5','8','0','3','6','9','#'};
-    private final static char[] keyboard_hardware = {'1','2','3','4','5','6','7','8','9','*','0','#'};
+    private final static char[] keyboard = {'1','4','7','*','2','5','8','0','3','6','9','#'};
 
-    private static char[] keyboard;
 
     public static void main(String[] args) {
         HAL.init();
         init();
-        System.out.println(getKey());
+        while(true) System.out.println(waitKey(5000000));
         //getKey();
         /*char key = 'D';
         char y = 'd';
@@ -25,9 +23,7 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
 
     }
     // Inicia a classe
-    public static void init() {
-        keyboard = keyboard_simulation;
-    }
+    public static void init() { }
 
     // Retorna de imediato a tecla premida ou NONE se não há tecla premida.
     public static char getKey() {

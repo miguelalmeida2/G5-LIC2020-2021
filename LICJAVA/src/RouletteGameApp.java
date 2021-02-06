@@ -154,11 +154,7 @@ public class RouletteGameApp {
         }
     }
 
-    public static void checkIfMaintenanceButtonOn(){
-        if(HAL.readBits(MAINTENANCE_BUTTON) == MAINTENANCE_BUTTON) {
-            maintenanceOptions(M.maintenanceMenu());}
-
-    }
+    public static void checkIfMaintenanceButtonOn(){ if(HAL.readBits(MAINTENANCE_BUTTON) == MAINTENANCE_BUTTON) { maintenanceOptions(M.maintenanceMenu());} }
 
     public static void checkIfMaintenanceButtonOff(){ if(HAL.readBits(MAINTENANCE_BUTTON) != MAINTENANCE_BUTTON) gameRotation(false); }
 
