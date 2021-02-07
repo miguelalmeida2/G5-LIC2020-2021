@@ -1,9 +1,12 @@
 
 
 public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
-    public static enum Destination {RDisplay,LCD};
+    public enum Destination {RDisplay,LCD};
     private static int SDX;
-    private static final int SOCSEL = 0x03;
+    private static final int SOCSEL_MASK = 0x08;
+    private static final int SDX_MASK = 0x02;
+    private static final int CLOCK_MASK = 0x04;
+
     // Inicia a classe
     public static void init(){
         HAL.writeBits(0x0F, 0);
@@ -17,25 +20,25 @@ public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
         int LnD = (addr.ordinal() == Destination.RDisplay.ordinal()) ? 0x00 : 0x01;
         SDX = (data << 1) | LnD;
 
-        HAL.setBits(SOCSEL);
+        HAL.setBits(SOCSEL_MASK);
         for (int i = 0; i <= 5; ++i){
             value = SDX & 0x01;
             if (value == 0x01){
-                HAL.setBits(0x01);
+                HAL.setBits(SDX_MASK);
                 ++p;
             }
             SCLK();
-            HAL.clrBits(0x01);
+            HAL.clrBits(SDX_MASK);
             SDX = SDX >> 1;
         }
 
-        if ( p % 2 != 0) HAL.setBits(0x01);
+        if ( p % 2 != 0) HAL.setBits(SDX_MASK);
         SCLK();
-        HAL.clrBits(0x01);
-        HAL.clrBits(SOCSEL);
+        HAL.clrBits(SDX_MASK);
+        HAL.clrBits(SOCSEL_MASK);
     }
     private static void SCLK(){
-        HAL.setBits(0x02);
-        HAL.clrBits(0x02);
+        HAL.setBits(CLOCK_MASK);
+        HAL.clrBits(CLOCK_MASK);
     }
 }
