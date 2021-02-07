@@ -11,6 +11,12 @@
   (Folder "Outputs")
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (GND
+      (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (PORTRIGHT-R
       (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -31,12 +37,6 @@
     (4x4Keyboard
       (FullPartName "4x4Keyboard.Normal")
       (LibraryName "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\ISEL_LIB.OLB")
-      (DeviceIndex "0"))
-    (GND
-      (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (VCC
-      (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (LCD_2_16
       (FullPartName "LCD_2_16.Normal")
@@ -66,10 +66,10 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1685 52 552")
-        (Scroll "2238 0")
-        (Zoom "421")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1685 52 562")
+        (Scroll "-288 0")
+        (Zoom "100")
         (Occurrence "/"))
-      (Path "C:\USERS\TIAGO\DESKTOP\GIT\G5-LIC2020-2021\LICORCAD\LIC.DSN")
+      (Path "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\LIC.DSN")
       (Schematic "SCHEMATIC1")
       (Page "Jogo Roleta"))))
