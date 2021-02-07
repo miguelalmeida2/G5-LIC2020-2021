@@ -11,6 +11,14 @@
   (Folder "Outputs")
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (VCC_ARROW
+      (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
     (GND
       (LibraryName "C:\ORCAD\ORCAD_16.5_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -56,20 +64,30 @@
       (Path "Design Resources")
       (Path "Design Resources" ".\lic.dsn")
       (Path "Design Resources" ".\lic.dsn" "SCHEMATIC1")
-      (Select "Design Resources" ".\lic.dsn" "SCHEMATIC1" "Jogo Roleta"))
+      (Path "Design Resources" ".\lic.dsn" "Design Cache"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 254 0 461"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 254 0 461"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1685 52 562")
-        (Scroll "-288 0")
+        (Placement "44 0 1 -1 -1 -8 -31 104 1737 104 604")
+        (Scroll "-307 0")
         (Zoom "100")
         (Occurrence "/"))
-      (Path "C:\USERS\USER\DESKTOP\GIT\JAVA-LIC\LICORCAD\LIC.DSN")
+      (Path "C:\USERS\TIAGO\DESKTOP\GIT\G5-LIC2020-2021\LICORCAD\LIC.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "Jogo Roleta"))))
+      (Page "Jogo Roleta"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 1371 26 530")
+        (Scroll "-163 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\TIAGO\DESKTOP\GIT\G5-LIC2020-2021\LICORCAD\LIC.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Jogo Roleta Serie"))))
