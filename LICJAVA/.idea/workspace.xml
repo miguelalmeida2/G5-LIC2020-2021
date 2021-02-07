@@ -21,7 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouletteGame.simul" beforeDir="false" afterPath="$PROJECT_DIR$/RouletteGame.simul" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Simul.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USB_PORT.properties" beforeDir="false" afterPath="$PROJECT_DIR$/USB_PORT.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/CoinAcceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/CoinAcceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/RouletteGameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/RouletteGameApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter$Destination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter$Destination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/Statistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/Statistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICLOGISIM/LICRouletteDisplay.circ" beforeDir="false" afterPath="$PROJECT_DIR$/../LICLOGISIM/LICRouletteDisplay.circ" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +74,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Application.RouletteGameApp">
+  <component name="RunManager" selected="Application.RouletteDisplay">
     <configuration name="KBD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KBD" />
       <module name="LICJAVA" />
@@ -102,17 +110,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RouletteGameApp" />
         <item itemvalue="Application.LCD" />
+        <item itemvalue="Application.RouletteGameApp" />
         <item itemvalue="Application.KBD" />
         <item itemvalue="Application.RouletteDisplay" />
         <item itemvalue="Application.TUI" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -136,38 +155,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1612639610662">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639610662" />
-    <state width="916" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612636897688" />
-    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1612639610662">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639610662" />
-    <state width="916" height="310" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612636897688" />
-    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1612639610662">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639610662" />
-    <state width="916" height="310" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612636897688" />
-    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1612639610662">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639610662" />
-    <state width="916" height="310" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612636897688" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1612635968348">
-      <screen x="1920" y="0" width="1280" height="984" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612635968348" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1612633740464">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612633740464" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LCD.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LCD.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
