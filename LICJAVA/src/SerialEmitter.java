@@ -8,7 +8,7 @@ public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
     private static final int CLOCK_MASK = 0x04;
     // Inicia a classe
     public static void init(){
-        HAL.writeBits(0x0F, 0);
+        HAL.writeBits(0x0E, 0);
     }
 
     // Envia uma trama para o Serial Receiver identificando o destino em addr e os bits de dados em‘data’.

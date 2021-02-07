@@ -21,11 +21,18 @@ public class RouletteDisplay {
     private static final int WAIT_TIME_ONE_AND_HALF_SECOND = 1500;
     private static final int WAIT_TIME_TWO_AND_HALF_SECOND = 2500;
 
+    private static final boolean SERIAL_INTERFACE = true;    // Define se a interface com o LCD é série ou paralela
+
     public static void main(String[] args) {
+
         HAL.init();
         init();
-        //showNumber(5);
-        animationRotatingSegment();
+        showNumber(1);
+        clearDisplay();
+        showNumber(5);
+        clearDisplay();
+        showNumber(9);
+        //animationRotatingSegment();
     }
     // Inicia a classe, estabelecendo os valores iniciais.
     public static void init() {
@@ -34,9 +41,13 @@ public class RouletteDisplay {
 
     // Envia comando para apresentar o número sorteado
     public static void showNumber(int number) {
-        HAL.clrBits(0xff);
-        HAL.setBits(number);
-        HAL.setBits(WR_BIT);
+        if (SERIAL_INTERFACE){
+            SerialEmitter.send(SerialEmitter.Destination.RDisplay, number);
+        }else {
+            HAL.clrBits(0xff);
+            HAL.setBits(number);
+            HAL.setBits(WR_BIT);
+        }
     }
 
     public static void animationRotatingSegment(){

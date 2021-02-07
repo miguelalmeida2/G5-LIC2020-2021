@@ -1437,8 +1437,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="DOC file path" val="C:\Users\manue\OneDrive\Documents\GitHub\G5-LIC2020-2021\LICCUPL\RouletteDisplay\output\rouletteDisplay.doc"/>
     </comp>
     <comp lib="7" loc="(1120,860)" name="UsbPort">
-      <a name="Server Address" val="/192.168.56.1:50642"/>
-      <a name="View Name" val="UsbPort 50642"/>
+      <a name="Server Address" val="/192.168.56.1:64070"/>
+      <a name="View Name" val="UsbPort 64070"/>
     </comp>
     <comp lib="0" loc="(390,230)" name="Ground"/>
     <comp lib="0" loc="(920,210)" name="Ground"/>
@@ -1586,8 +1586,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1030,640)" to="(1030,760)"/>
     <wire from="(980,360)" to="(990,360)"/>
     <wire from="(840,380)" to="(850,380)"/>
-    <wire from="(850,110)" to="(860,110)"/>
     <wire from="(850,70)" to="(860,70)"/>
+    <wire from="(850,110)" to="(860,110)"/>
     <wire from="(480,180)" to="(480,240)"/>
     <wire from="(1070,400)" to="(1090,400)"/>
     <wire from="(860,100)" to="(940,100)"/>
@@ -1642,15 +1642,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="o3"/>
     </comp>
-    <comp lib="0" loc="(850,50)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="S0"/>
-    </comp>
     <comp lib="0" loc="(520,530)" name="Tunnel">
       <a name="label" val="C1"/>
     </comp>
     <comp lib="0" loc="(1090,370)" name="Tunnel">
       <a name="label" val="S3"/>
+    </comp>
+    <comp lib="0" loc="(850,110)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S1"/>
     </comp>
     <comp lib="0" loc="(890,680)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -1695,6 +1695,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="label" val="S2"/>
     </comp>
+    <comp lib="0" loc="(850,50)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S4"/>
+    </comp>
     <comp lib="0" loc="(390,460)" name="Power"/>
     <comp lib="0" loc="(470,220)" name="Power"/>
     <comp lib="0" loc="(100,500)" name="Tunnel">
@@ -1704,9 +1708,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(1090,340)" name="Tunnel">
       <a name="label" val="S4"/>
     </comp>
+    <comp lib="0" loc="(850,70)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S3"/>
+    </comp>
     <comp lib="0" loc="(210,210)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="S3"/>
+    </comp>
+    <comp lib="0" loc="(850,130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S0"/>
     </comp>
     <comp lib="0" loc="(950,680)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -1728,25 +1740,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="label" val="o6"/>
     </comp>
-    <comp lib="0" loc="(850,130)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="S4"/>
-    </comp>
     <comp lib="0" loc="(510,230)" name="Ground"/>
     <comp lib="0" loc="(930,680)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="o3"/>
     </comp>
     <comp lib="7" loc="(830,760)" name="UsbPort">
-      <a name="Server Address" val="/192.168.56.1:63645"/>
-      <a name="View Name" val="UsbPort 63645"/>
+      <a name="Server Address" val="/192.168.56.1:64334"/>
+      <a name="View Name" val="UsbPort 64334"/>
     </comp>
     <comp lib="0" loc="(520,470)" name="Tunnel">
       <a name="label" val="L1"/>
-    </comp>
-    <comp lib="0" loc="(850,110)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="S3"/>
     </comp>
     <comp lib="0" loc="(1010,50)" name="Power"/>
     <comp lib="0" loc="(110,620)" name="Pull Resistor">
@@ -1809,10 +1813,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(150,210)" name="Tunnel">
       <a name="facing" val="north"/>
-      <a name="label" val="S1"/>
-    </comp>
-    <comp lib="0" loc="(850,70)" name="Tunnel">
-      <a name="facing" val="east"/>
       <a name="label" val="S1"/>
     </comp>
     <comp lib="0" loc="(1080,680)" name="Tunnel">
