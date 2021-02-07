@@ -138,44 +138,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(380,290)" to="(380,350)"/>
     <wire from="(90,410)" to="(350,410)"/>
     <wire from="(350,410)" to="(420,410)"/>
-    <comp lib="0" loc="(90,110)" name="Clock"/>
-    <comp lib="0" loc="(730,220)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K3"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(90,350)" name="Pull Resistor">
+      <a name="pull" val="1"/>
     </comp>
-    <comp lib="1" loc="(470,330)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp loc="(510,320)" name="PENC"/>
-    <comp lib="1" loc="(230,270)" name="NOT Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="20"/>
-    </comp>
+    <comp loc="(230,120)" name="CONT"/>
+    <comp loc="(620,310)" name="REG"/>
     <comp lib="1" loc="(200,270)" name="NOT Gate">
       <a name="facing" val="south"/>
       <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(70,350)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="1" loc="(470,310)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="1" loc="(260,270)" name="NOT Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(730,200)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K2"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="7" loc="(230,340)" name="4x4 Matrix Keyboard"/>
-    <comp lib="0" loc="(110,350)" name="Pull Resistor">
-      <a name="pull" val="1"/>
     </comp>
     <comp lib="0" loc="(730,360)" name="Pin">
       <a name="facing" val="west"/>
@@ -187,21 +157,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="Kscan"/>
     </comp>
+    <comp lib="0" loc="(90,110)" name="Clock"/>
+    <comp lib="0" loc="(70,350)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
     <comp lib="1" loc="(470,350)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp loc="(230,220)" name="DEC"/>
-    <comp lib="0" loc="(130,350)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="0" loc="(90,350)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="0" loc="(730,160)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K0"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="1" loc="(230,270)" name="NOT Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="20"/>
     </comp>
     <comp lib="0" loc="(730,180)" name="Pin">
       <a name="facing" val="west"/>
@@ -209,10 +174,45 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="K1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp loc="(230,120)" name="CONT"/>
-    <comp loc="(620,310)" name="REG"/>
     <comp lib="1" loc="(470,290)" name="NOT Gate">
       <a name="size" val="20"/>
+    </comp>
+    <comp lib="0" loc="(730,220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="K3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(730,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="K0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(230,220)" name="DEC"/>
+    <comp loc="(510,320)" name="PENC"/>
+    <comp lib="1" loc="(470,310)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(470,330)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="7" loc="(230,340)" name="4x4 Matrix Keyboard"/>
+    <comp lib="0" loc="(730,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="K2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(260,270)" name="NOT Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="0" loc="(130,350)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(110,350)" name="Pull Resistor">
+      <a name="pull" val="1"/>
     </comp>
   </circuit>
   <circuit name="PENC">
@@ -314,63 +314,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(470,430)" to="(540,430)"/>
     <wire from="(320,100)" to="(390,100)"/>
     <wire from="(530,360)" to="(540,360)"/>
-    <comp lib="0" loc="(540,150)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Y1"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(60,180)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="3"/>
-    </comp>
-    <comp lib="0" loc="(60,340)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="0"/>
-    </comp>
-    <comp lib="1" loc="(510,70)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(260,33)" name="Text">
-      <a name="text" val="PRIORITY HIGH"/>
-      <a name="font" val="SansSerif plain 20"/>
-    </comp>
-    <comp lib="1" loc="(380,220)" name="OR Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(60,60)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="0"/>
-    </comp>
-    <comp lib="6" loc="(279,316)" name="Text">
-      <a name="text" val="PRIORITY LOW"/>
-      <a name="font" val="SansSerif plain 20"/>
-    </comp>
-    <comp lib="0" loc="(540,360)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Y0"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(60,140)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="2"/>
-    </comp>
     <comp lib="0" loc="(540,220)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="GS"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(430,90)" name="AND Gate">
+    <comp lib="1" loc="(490,350)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
-      <a name="negate1" val="true"/>
+      <a name="negate0" val="true"/>
     </comp>
-    <comp lib="0" loc="(60,100)" name="Pin">
+    <comp lib="0" loc="(60,460)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="1"/>
+      <a name="label" val="3"/>
     </comp>
     <comp lib="0" loc="(550,550)" name="Pin">
       <a name="facing" val="west"/>
@@ -378,27 +335,30 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="GS"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="6" loc="(279,316)" name="Text">
+      <a name="text" val="PRIORITY LOW"/>
+      <a name="font" val="SansSerif plain 20"/>
+    </comp>
+    <comp lib="0" loc="(60,180)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="3"/>
+    </comp>
+    <comp lib="1" loc="(380,220)" name="OR Gate">
+      <a name="inputs" val="4"/>
+    </comp>
     <comp lib="1" loc="(510,150)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(540,70)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Y0"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(390,550)" name="OR Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(490,350)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="negate0" val="true"/>
-    </comp>
     <comp lib="0" loc="(60,420)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="2"/>
+    </comp>
+    <comp lib="0" loc="(540,150)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y1"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(540,430)" name="Pin">
       <a name="facing" val="west"/>
@@ -406,17 +366,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Y1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(530,360)" name="OR Gate">
+    <comp lib="1" loc="(480,380)" name="AND Gate">
       <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+      <a name="inputs" val="3"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
     </comp>
-    <comp lib="0" loc="(60,380)" name="Pin">
+    <comp lib="0" loc="(60,340)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="1"/>
+      <a name="label" val="0"/>
     </comp>
-    <comp lib="0" loc="(60,460)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="3"/>
+    <comp lib="1" loc="(390,550)" name="OR Gate">
+      <a name="inputs" val="4"/>
     </comp>
     <comp lib="1" loc="(470,430)" name="AND Gate">
       <a name="size" val="30"/>
@@ -424,11 +385,50 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="negate0" val="true"/>
       <a name="negate1" val="true"/>
     </comp>
-    <comp lib="1" loc="(480,380)" name="AND Gate">
+    <comp lib="0" loc="(60,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="1"/>
+    </comp>
+    <comp lib="0" loc="(540,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(540,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(530,360)" name="OR Gate">
       <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
-      <a name="negate0" val="true"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(60,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="0"/>
+    </comp>
+    <comp lib="1" loc="(430,90)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
       <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="6" loc="(260,33)" name="Text">
+      <a name="text" val="PRIORITY HIGH"/>
+      <a name="font" val="SansSerif plain 20"/>
+    </comp>
+    <comp lib="0" loc="(60,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="2"/>
+    </comp>
+    <comp lib="1" loc="(510,70)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(60,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="1"/>
     </comp>
   </circuit>
   <circuit name="DEC">
@@ -468,27 +468,29 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(80,120)" to="(120,120)"/>
     <wire from="(120,120)" to="(160,120)"/>
     <wire from="(140,140)" to="(180,140)"/>
-    <comp lib="1" loc="(230,130)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="negate0" val="true"/>
-      <a name="negate1" val="true"/>
-    </comp>
-    <comp lib="0" loc="(310,170)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="1"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(80,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S1"/>
     </comp>
     <comp lib="1" loc="(230,210)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
       <a name="negate1" val="true"/>
     </comp>
+    <comp lib="0" loc="(80,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S0"/>
+    </comp>
     <comp lib="1" loc="(230,170)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
       <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="1" loc="(230,130)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
     </comp>
     <comp lib="0" loc="(310,210)" name="Pin">
       <a name="facing" val="west"/>
@@ -496,19 +498,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="2"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(310,170)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="1"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(310,130)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="0"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(80,140)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="S0"/>
-    </comp>
-    <comp lib="0" loc="(80,120)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="S1"/>
     </comp>
   </circuit>
   <circuit name="CONT">
@@ -561,45 +561,45 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(310,30)" to="(580,30)"/>
     <wire from="(170,130)" to="(310,130)"/>
     <wire from="(330,100)" to="(400,100)"/>
-    <comp lib="0" loc="(580,30)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Q0"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(160,80)" name="AND Gate">
-      <a name="size" val="30"/>
+    <comp lib="1" loc="(400,280)" name="XOR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(300,300)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="4" loc="(440,80)" name="D Flip-Flop"/>
     <comp lib="0" loc="(580,80)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Q1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="4" loc="(280,80)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(70,70)" name="Pin">
+    <comp lib="0" loc="(300,300)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="Clock"/>
     </comp>
     <comp lib="1" loc="(230,100)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
       <a name="negate1" val="true"/>
     </comp>
-    <comp lib="1" loc="(400,280)" name="XOR Gate">
+    <comp lib="1" loc="(160,80)" name="AND Gate">
+      <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(70,90)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="CE"/>
     </comp>
+    <comp lib="0" loc="(580,30)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(300,260)" name="Pin">
       <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(280,80)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(440,80)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(70,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clock"/>
     </comp>
   </circuit>
   <circuit name="REG">
@@ -641,16 +641,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Q1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(70,100)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y0"/>
-    </comp>
-    <comp lib="4" loc="(180,80)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(340,80)" name="D Flip-Flop"/>
     <comp lib="0" loc="(70,80)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="Clock"/>
     </comp>
-    <comp lib="4" loc="(340,80)" name="D Flip-Flop"/>
     <comp lib="0" loc="(480,30)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -661,6 +656,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="Y1"/>
     </comp>
+    <comp lib="0" loc="(70,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y0"/>
+    </comp>
+    <comp lib="4" loc="(180,80)" name="D Flip-Flop"/>
   </circuit>
   <circuit name="Pal com control">
     <a name="circuit" val="Pal com control"/>
@@ -724,65 +724,60 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(440,190)" to="(570,190)"/>
     <wire from="(890,240)" to="(890,550)"/>
     <wire from="(100,370)" to="(100,430)"/>
+    <comp lib="0" loc="(100,370)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
     <comp lib="0" loc="(960,370)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="K0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(70,370)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="0" loc="(960,430)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K2"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(960,220)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(130,370)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="0" loc="(160,370)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
     <comp lib="0" loc="(960,200)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(640,140)" name="Power"/>
-    <comp lib="7" loc="(540,360)" name="4x4 Matrix Keyboard"/>
-    <comp lib="0" loc="(960,400)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K1"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(80,140)" name="Clock"/>
+    <comp lib="0" loc="(70,370)" name="Pull Resistor">
+      <a name="pull" val="1"/>
     </comp>
+    <comp lib="0" loc="(640,140)" name="Power"/>
     <comp lib="0" loc="(960,460)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="K3"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(960,160)" name="Pin">
+    <comp lib="7" loc="(570,130)" name="ATF750c">
+      <a name="DOC file path" val="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\Key Control\output\KeyControl.doc"/>
+    </comp>
+    <comp lib="7" loc="(540,360)" name="4x4 Matrix Keyboard"/>
+    <comp lib="0" loc="(80,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Kack"/>
+    </comp>
+    <comp lib="0" loc="(130,370)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(960,400)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="label" val="K1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(80,140)" name="Clock"/>
-    <comp lib="0" loc="(550,260)" name="Ground"/>
     <comp lib="0" loc="(960,180)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(100,370)" name="Pull Resistor">
+    <comp lib="0" loc="(160,370)" name="Pull Resistor">
       <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(960,220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(860,120)" name="Pin">
       <a name="facing" val="west"/>
@@ -790,12 +785,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Kval"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="7" loc="(570,130)" name="ATF750c">
-      <a name="DOC file path" val="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\Key Control\output\KeyControl.doc"/>
+    <comp lib="0" loc="(960,430)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="K2"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(80,160)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Kack"/>
+    <comp lib="0" loc="(550,260)" name="Ground"/>
+    <comp lib="0" loc="(960,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
     </comp>
   </circuit>
   <circuit name="PAL keyboard">
@@ -856,43 +856,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(60,90)" to="(70,90)"/>
     <wire from="(230,100)" to="(360,100)"/>
     <wire from="(540,170)" to="(540,480)"/>
-    <comp lib="0" loc="(350,190)" name="Ground"/>
     <comp lib="0" loc="(610,300)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="K0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(610,360)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K2"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(500,100)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Kpress"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(50,300)" name="Pull Resistor">
+    <comp lib="0" loc="(140,300)" name="Pull Resistor">
       <a name="pull" val="1"/>
     </comp>
-    <comp lib="0" loc="(430,70)" name="Power"/>
-    <comp lib="0" loc="(610,390)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K3"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(610,330)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K1"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="7" loc="(360,60)" name="ATF750c">
-      <a name="DOC file path" val="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\Key Decode\output\KeyDecode.doc"/>
+    <comp lib="0" loc="(110,300)" name="Pull Resistor">
+      <a name="pull" val="1"/>
     </comp>
     <comp lib="0" loc="(60,90)" name="Pin">
       <a name="tristate" val="false"/>
@@ -903,13 +877,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="7" loc="(330,290)" name="4x4 Matrix Keyboard"/>
-    <comp lib="0" loc="(110,300)" name="Pull Resistor">
-      <a name="pull" val="1"/>
+    <comp lib="0" loc="(350,190)" name="Ground"/>
+    <comp lib="7" loc="(360,60)" name="ATF750c">
+      <a name="DOC file path" val="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\Key Decode\output\KeyDecode.doc"/>
     </comp>
     <comp lib="0" loc="(620,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(610,390)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="K3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(500,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Kpress"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(80,300)" name="Pull Resistor">
@@ -920,13 +906,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(430,70)" name="Power"/>
     <comp lib="0" loc="(60,70)" name="Clock"/>
+    <comp lib="0" loc="(610,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="K2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="7" loc="(330,290)" name="4x4 Matrix Keyboard"/>
+    <comp lib="0" loc="(610,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="K1"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(620,110)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(140,300)" name="Pull Resistor">
+    <comp lib="0" loc="(50,300)" name="Pull Resistor">
       <a name="pull" val="1"/>
     </comp>
   </circuit>
@@ -989,16 +989,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(400,180)" to="(400,430)"/>
     <wire from="(80,270)" to="(80,330)"/>
     <wire from="(310,410)" to="(380,410)"/>
+    <comp lib="0" loc="(70,90)" name="Clock"/>
     <comp lib="0" loc="(380,140)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Kscan"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(280,210)" name="Ground"/>
-    <comp lib="0" loc="(470,100)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(470,140)" name="Pin">
@@ -1006,40 +1001,30 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="7" loc="(290,80)" name="ATF750c">
-      <a name="DOC file path" val="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\KeyBuffer\output\KeyBuffer.doc"/>
-    </comp>
-    <comp lib="0" loc="(100,270)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
     <comp lib="0" loc="(80,270)" name="Pull Resistor">
       <a name="pull" val="1"/>
     </comp>
-    <comp lib="0" loc="(470,120)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(60,270)" name="Pull Resistor">
+      <a name="pull" val="1"/>
     </comp>
-    <comp lib="0" loc="(70,90)" name="Clock"/>
-    <comp lib="7" loc="(240,260)" name="4x4 Matrix Keyboard"/>
+    <comp lib="7" loc="(290,80)" name="ATF750c">
+      <a name="DOC file path" val="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\KeyBuffer\output\KeyBuffer.doc"/>
+    </comp>
     <comp lib="0" loc="(470,300)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="K1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(470,80)" name="Pin">
+    <comp lib="0" loc="(470,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(120,270)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="0" loc="(470,270)" name="Pin">
+    <comp lib="0" loc="(470,360)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="K0"/>
+      <a name="label" val="K3"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(380,160)" name="Pin">
@@ -1049,24 +1034,39 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(360,90)" name="Power"/>
-    <comp lib="0" loc="(470,360)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="K3"/>
-      <a name="labelloc" val="east"/>
-    </comp>
+    <comp lib="0" loc="(280,210)" name="Ground"/>
+    <comp lib="7" loc="(240,260)" name="4x4 Matrix Keyboard"/>
     <comp lib="0" loc="(470,330)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="K2"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(60,270)" name="Pull Resistor">
+    <comp lib="0" loc="(100,270)" name="Pull Resistor">
       <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(470,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(470,270)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="K0"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(70,110)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="Kack"/>
+    </comp>
+    <comp lib="0" loc="(120,270)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(470,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
     </comp>
   </circuit>
   <circuit name="counter">
@@ -1112,12 +1112,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(90,100)" to="(100,100)"/>
     <wire from="(310,140)" to="(310,260)"/>
     <wire from="(100,130)" to="(100,190)"/>
-    <comp lib="0" loc="(60,260)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(410,100)" name="AND Gate">
+    <comp lib="1" loc="(490,110)" name="XOR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
+      <a name="xor" val="odd"/>
+    </comp>
+    <comp lib="0" loc="(160,70)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(640,90)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q1"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(90,100)" name="Pin">
       <a name="tristate" val="false"/>
@@ -1127,7 +1134,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(160,90)" name="Clock"/>
     <comp lib="4" loc="(320,90)" name="D Flip-Flop"/>
     <comp lib="0" loc="(640,40)" name="Pin">
       <a name="facing" val="west"/>
@@ -1135,21 +1141,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Q0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(490,110)" name="XOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="xor" val="odd"/>
-    </comp>
-    <comp lib="0" loc="(160,70)" name="Pin">
+    <comp lib="4" loc="(550,90)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(60,260)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="4" loc="(550,90)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(640,90)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Q1"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="1" loc="(410,100)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
+    <comp lib="0" loc="(160,90)" name="Clock"/>
   </circuit>
   <circuit name="LCD">
     <a name="circuit" val="LCD"/>
@@ -1214,58 +1214,61 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(190,220)" to="(190,280)"/>
     <wire from="(130,220)" to="(130,280)"/>
     <wire from="(890,100)" to="(890,150)"/>
-    <comp lib="0" loc="(700,240)" name="Ground"/>
-    <comp lib="0" loc="(190,280)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
+    <comp lib="7" loc="(720,90)" name="ATF750c">
+      <a name="DOC file path" val="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\RouletteDisplay\output\rouletteDisplay.doc"/>
     </comp>
+    <comp lib="0" loc="(660,210)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="wr"/>
+    </comp>
+    <comp lib="7" loc="(70,70)" name="LCD 16x2"/>
     <comp lib="0" loc="(660,120)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="d2"/>
     </comp>
-    <comp lib="0" loc="(480,260)" name="Power"/>
-    <comp lib="7" loc="(70,70)" name="LCD 16x2"/>
-    <comp lib="0" loc="(790,80)" name="Power"/>
-    <comp lib="0" loc="(660,190)" name="Pin">
+    <comp lib="0" loc="(660,80)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="ph"/>
+      <a name="label" val="d0"/>
     </comp>
-    <comp lib="0" loc="(430,280)" name="Pin">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(660,140)" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="label" val="d3"/>
     </comp>
     <comp lib="0" loc="(660,100)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="d1"/>
     </comp>
-    <comp lib="0" loc="(460,270)" name="Ground"/>
-    <comp lib="0" loc="(520,270)" name="Ground"/>
     <comp lib="5" loc="(860,150)" name="7-Segment Display"/>
-    <comp lib="0" loc="(660,80)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="d0"/>
-    </comp>
-    <comp lib="7" loc="(720,90)" name="ATF750c">
-      <a name="DOC file path" val="C:\Users\tiago\Desktop\GIT\G5-LIC2020-2021\LICCUPL\RouletteDisplay\output\rouletteDisplay.doc"/>
-    </comp>
-    <comp lib="0" loc="(160,280)" name="Pin">
+    <comp lib="0" loc="(190,280)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(430,280)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(400,270)" name="Ground"/>
+    <comp lib="0" loc="(520,270)" name="Ground"/>
+    <comp lib="0" loc="(660,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="d4"/>
     </comp>
     <comp lib="0" loc="(130,280)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(660,160)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="d4"/>
-    </comp>
-    <comp lib="0" loc="(400,270)" name="Ground"/>
-    <comp lib="0" loc="(660,210)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="wr"/>
-    </comp>
+    <comp lib="0" loc="(700,240)" name="Ground"/>
+    <comp lib="0" loc="(480,260)" name="Power"/>
+    <comp lib="0" loc="(790,80)" name="Power"/>
     <comp lib="0" loc="(370,280)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(660,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="ph"/>
+    </comp>
+    <comp lib="0" loc="(160,280)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
     </comp>
@@ -1273,10 +1276,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(660,140)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="d3"/>
-    </comp>
+    <comp lib="0" loc="(460,270)" name="Ground"/>
   </circuit>
   <circuit name="ALL">
     <a name="circuit" val="ALL"/>
@@ -1420,28 +1420,36 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1050,80)" to="(1050,130)"/>
     <wire from="(720,810)" to="(1180,810)"/>
     <wire from="(50,850)" to="(1140,850)"/>
-    <comp lib="0" loc="(450,230)" name="Ground"/>
-    <comp lib="0" loc="(90,620)" name="Pull Resistor">
+    <comp lib="0" loc="(150,620)" name="Pull Resistor">
       <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(310,580)" name="Ground"/>
+    <comp lib="0" loc="(1320,140)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="M"/>
+    </comp>
+    <comp lib="0" loc="(1010,50)" name="Power"/>
+    <comp lib="0" loc="(100,460)" name="Clock"/>
+    <comp lib="7" loc="(60,30)" name="LCD 16x2"/>
+    <comp lib="0" loc="(410,510)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Kscan"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="7" loc="(320,450)" name="ATF750c">
       <a name="DOC file path" val="C:\Users\manue\OneDrive\Documents\GitHub\G5-LIC2020-2021\LICCUPL\KeyBoard Reader\output\template.doc"/>
     </comp>
-    <comp lib="0" loc="(100,460)" name="Clock"/>
-    <comp lib="0" loc="(110,620)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
+    <comp lib="7" loc="(270,610)" name="4x4 Matrix Keyboard"/>
     <comp lib="5" loc="(1100,120)" name="7-Segment Display"/>
-    <comp lib="7" loc="(60,30)" name="LCD 16x2"/>
-    <comp lib="0" loc="(310,580)" name="Ground"/>
-    <comp lib="0" loc="(470,220)" name="Power"/>
+    <comp lib="0" loc="(510,230)" name="Ground"/>
     <comp lib="0" loc="(130,620)" name="Pull Resistor">
       <a name="pull" val="1"/>
     </comp>
-    <comp lib="0" loc="(150,620)" name="Pull Resistor">
+    <comp lib="0" loc="(90,620)" name="Pull Resistor">
       <a name="pull" val="1"/>
     </comp>
-    <comp lib="0" loc="(390,230)" name="Ground"/>
     <comp lib="7" loc="(1120,860)" name="UsbPort">
       <a name="Server Address" val="/192.168.56.1:60596"/>
       <a name="View Name" val="UsbPort 60596"/>
@@ -1449,22 +1457,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="7" loc="(940,60)" name="ATF750c">
       <a name="DOC file path" val="C:\Users\manue\OneDrive\Documents\GitHub\G5-LIC2020-2021\LICCUPL\RouletteDisplay\output\rouletteDisplay.doc"/>
     </comp>
-    <comp lib="0" loc="(410,510)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Kscan"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(390,460)" name="Power"/>
-    <comp lib="0" loc="(510,230)" name="Ground"/>
-    <comp lib="0" loc="(1320,140)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="M"/>
-    </comp>
     <comp lib="0" loc="(920,210)" name="Ground"/>
-    <comp lib="0" loc="(1010,50)" name="Power"/>
-    <comp lib="7" loc="(270,610)" name="4x4 Matrix Keyboard"/>
+    <comp lib="0" loc="(110,620)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(390,230)" name="Ground"/>
+    <comp lib="0" loc="(450,230)" name="Ground"/>
+    <comp lib="0" loc="(470,220)" name="Power"/>
+    <comp lib="0" loc="(390,460)" name="Power"/>
   </circuit>
   <circuit name="ALL With SOC">
     <a name="circuit" val="ALL With SOC"/>
@@ -1524,8 +1524,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1000,370)" to="(1000,390)"/>
     <wire from="(130,620)" to="(130,650)"/>
     <wire from="(140,470)" to="(140,500)"/>
-    <wire from="(210,180)" to="(210,210)"/>
     <wire from="(980,460)" to="(1090,460)"/>
+    <wire from="(210,180)" to="(210,210)"/>
     <wire from="(150,620)" to="(180,620)"/>
     <wire from="(840,400)" to="(860,400)"/>
     <wire from="(920,160)" to="(940,160)"/>
@@ -1585,9 +1585,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(220,500)" to="(220,680)"/>
     <wire from="(1030,640)" to="(1030,760)"/>
     <wire from="(980,360)" to="(990,360)"/>
-    <wire from="(850,70)" to="(860,70)"/>
-    <wire from="(850,110)" to="(860,110)"/>
     <wire from="(840,380)" to="(850,380)"/>
+    <wire from="(850,110)" to="(860,110)"/>
+    <wire from="(850,70)" to="(860,70)"/>
     <wire from="(480,180)" to="(480,240)"/>
     <wire from="(1070,400)" to="(1090,400)"/>
     <wire from="(860,100)" to="(940,100)"/>
@@ -1615,8 +1615,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(360,560)" to="(450,560)"/>
     <wire from="(200,490)" to="(200,650)"/>
     <wire from="(1080,430)" to="(1090,430)"/>
-    <wire from="(850,90)" to="(940,90)"/>
     <wire from="(850,170)" to="(940,170)"/>
+    <wire from="(850,90)" to="(940,90)"/>
     <wire from="(850,370)" to="(940,370)"/>
     <wire from="(980,70)" to="(1010,70)"/>
     <wire from="(1060,370)" to="(1060,430)"/>
@@ -1629,213 +1629,213 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(110,620)" to="(110,680)"/>
     <wire from="(1050,80)" to="(1050,130)"/>
     <wire from="(980,430)" to="(1060,430)"/>
-    <comp lib="0" loc="(1110,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="C0"/>
-    </comp>
-    <comp lib="0" loc="(390,460)" name="Power"/>
-    <comp lib="0" loc="(850,170)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Wr"/>
-    </comp>
-    <comp lib="0" loc="(1090,430)" name="Tunnel">
-      <a name="label" val="S1"/>
-    </comp>
-    <comp lib="0" loc="(110,620)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="0" loc="(840,380)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="o2"/>
-    </comp>
-    <comp lib="0" loc="(850,90)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="S2"/>
-    </comp>
-    <comp lib="0" loc="(840,400)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="o1"/>
-    </comp>
-    <comp lib="0" loc="(520,500)" name="Tunnel">
-      <a name="label" val="C0"/>
-    </comp>
-    <comp lib="0" loc="(1150,680)" name="Tunnel">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(520,440)" name="Tunnel">
       <a name="label" val="L0"/>
     </comp>
-    <comp lib="0" loc="(1090,400)" name="Tunnel">
-      <a name="label" val="S2"/>
-    </comp>
-    <comp lib="0" loc="(520,530)" name="Tunnel">
-      <a name="label" val="C1"/>
-    </comp>
-    <comp lib="0" loc="(850,130)" name="Tunnel">
+    <comp lib="0" loc="(840,360)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="S4"/>
-    </comp>
-    <comp lib="0" loc="(520,470)" name="Tunnel">
-      <a name="label" val="L1"/>
-    </comp>
-    <comp lib="0" loc="(120,210)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="S4"/>
+      <a name="label" val="o3"/>
     </comp>
     <comp lib="0" loc="(990,680)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="o0"/>
     </comp>
-    <comp lib="0" loc="(970,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="o1"/>
+    <comp lib="0" loc="(1020,370)" name="Tunnel">
+      <a name="label" val="Wr"/>
+    </comp>
+    <comp lib="0" loc="(520,560)" name="Tunnel">
+      <a name="label" val="Dval"/>
+    </comp>
+    <comp lib="7" loc="(320,450)" name="ATF750c">
+      <a name="DOC file path" val="C:\Users\manue\OneDrive\Documents\GitHub\G5-LIC2020-2021\LICCUPL\KeyBoard Reader\output\template.doc"/>
+    </comp>
+    <comp lib="0" loc="(110,620)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(520,470)" name="Tunnel">
+      <a name="label" val="L1"/>
     </comp>
     <comp lib="0" loc="(470,220)" name="Power"/>
-    <comp lib="7" loc="(270,610)" name="4x4 Matrix Keyboard"/>
+    <comp lib="0" loc="(1020,400)" name="Tunnel">
+      <a name="label" val="Wrl"/>
+    </comp>
+    <comp lib="0" loc="(910,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="o4"/>
+    </comp>
+    <comp lib="7" loc="(940,350)" name="ATF750c">
+      <a name="DOC file path" val="D:\ISEL\CUPL\SOC\output\SOC.doc"/>
+    </comp>
+    <comp lib="0" loc="(520,500)" name="Tunnel">
+      <a name="label" val="C0"/>
+    </comp>
+    <comp lib="0" loc="(120,210)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="S0"/>
+    </comp>
+    <comp lib="0" loc="(150,210)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="0" loc="(390,460)" name="Power"/>
+    <comp lib="7" loc="(940,60)" name="ATF750c">
+      <a name="DOC file path" val="C:\Users\manue\OneDrive\Documents\GitHub\G5-LIC2020-2021\LICCUPL\RouletteDisplay\output\rouletteDisplay.doc"/>
+    </comp>
+    <comp lib="0" loc="(1010,50)" name="Power"/>
+    <comp lib="0" loc="(450,230)" name="Ground"/>
+    <comp lib="0" loc="(850,50)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S0"/>
+    </comp>
+    <comp lib="0" loc="(1090,430)" name="Tunnel">
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="0" loc="(840,430)" name="Clock"/>
+    <comp lib="0" loc="(850,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="o7"/>
+    </comp>
     <comp lib="0" loc="(410,510)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Kscan"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(890,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="o5"/>
-    </comp>
-    <comp lib="0" loc="(1090,340)" name="Tunnel">
-      <a name="label" val="S4"/>
-    </comp>
-    <comp lib="0" loc="(1170,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="L1"/>
-    </comp>
-    <comp lib="0" loc="(850,70)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="S1"/>
-    </comp>
-    <comp lib="0" loc="(1020,370)" name="Tunnel">
-      <a name="label" val="Wr"/>
-    </comp>
-    <comp lib="0" loc="(930,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="o3"/>
-    </comp>
-    <comp lib="0" loc="(520,440)" name="Tunnel">
-      <a name="label" val="L0"/>
-    </comp>
-    <comp lib="0" loc="(360,220)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Wrl"/>
-    </comp>
-    <comp lib="0" loc="(1010,50)" name="Power"/>
-    <comp lib="0" loc="(390,230)" name="Ground"/>
-    <comp lib="0" loc="(990,330)" name="Power"/>
-    <comp lib="0" loc="(1090,460)" name="Tunnel">
-      <a name="label" val="S0"/>
-    </comp>
-    <comp lib="0" loc="(850,50)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="S0"/>
-    </comp>
-    <comp lib="0" loc="(920,490)" name="Ground"/>
-    <comp lib="7" loc="(830,760)" name="UsbPort">
-      <a name="Server Address" val="/192.168.56.1:63016"/>
-      <a name="View Name" val="UsbPort 63016"/>
-    </comp>
-    <comp lib="0" loc="(1020,400)" name="Tunnel">
-      <a name="label" val="Wrl"/>
-    </comp>
-    <comp lib="7" loc="(320,450)" name="ATF750c">
-      <a name="DOC file path" val="C:\Users\manue\OneDrive\Documents\GitHub\G5-LIC2020-2021\LICCUPL\KeyBoard Reader\output\template.doc"/>
-    </comp>
-    <comp lib="0" loc="(920,210)" name="Ground"/>
-    <comp lib="0" loc="(150,210)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="S3"/>
-    </comp>
-    <comp lib="0" loc="(1090,370)" name="Tunnel">
-      <a name="label" val="S3"/>
-    </comp>
-    <comp lib="0" loc="(310,580)" name="Ground"/>
-    <comp lib="0" loc="(100,500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="o7"/>
-    </comp>
-    <comp lib="0" loc="(850,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="o7"/>
-    </comp>
-    <comp lib="0" loc="(520,560)" name="Tunnel">
-      <a name="label" val="Dval"/>
-    </comp>
-    <comp lib="0" loc="(840,430)" name="Clock"/>
-    <comp lib="0" loc="(840,360)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="o3"/>
-    </comp>
-    <comp lib="0" loc="(510,230)" name="Ground"/>
-    <comp lib="0" loc="(100,460)" name="Clock"/>
-    <comp lib="7" loc="(940,60)" name="ATF750c">
-      <a name="DOC file path" val="C:\Users\manue\OneDrive\Documents\GitHub\G5-LIC2020-2021\LICCUPL\RouletteDisplay\output\rouletteDisplay.doc"/>
-    </comp>
-    <comp lib="0" loc="(130,620)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="0" loc="(910,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="o4"/>
-    </comp>
-    <comp lib="0" loc="(1030,640)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="M"/>
-    </comp>
-    <comp lib="0" loc="(1130,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="C1"/>
-    </comp>
-    <comp lib="7" loc="(940,350)" name="ATF750c">
-      <a name="DOC file path" val="D:\ISEL\CUPL\SOC\output\SOC.doc"/>
-    </comp>
-    <comp lib="0" loc="(1080,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="Dval"/>
-    </comp>
-    <comp lib="0" loc="(420,210)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="S0"/>
-    </comp>
-    <comp lib="0" loc="(150,620)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
     <comp lib="0" loc="(1270,650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="o6"/>
     </comp>
-    <comp lib="0" loc="(210,210)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="S1"/>
+    <comp lib="0" loc="(850,170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Wr"/>
     </comp>
-    <comp lib="0" loc="(90,620)" name="Pull Resistor">
-      <a name="pull" val="1"/>
-    </comp>
-    <comp lib="5" loc="(1100,120)" name="7-Segment Display"/>
-    <comp lib="0" loc="(870,680)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="o6"/>
-    </comp>
-    <comp lib="0" loc="(180,210)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="S2"/>
-    </comp>
-    <comp lib="0" loc="(950,680)" name="Tunnel">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(840,380)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="label" val="o2"/>
     </comp>
     <comp lib="0" loc="(850,110)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="S3"/>
     </comp>
-    <comp lib="0" loc="(450,230)" name="Ground"/>
+    <comp lib="0" loc="(1030,640)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="M"/>
+    </comp>
+    <comp lib="0" loc="(840,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="o1"/>
+    </comp>
+    <comp lib="0" loc="(1090,370)" name="Tunnel">
+      <a name="label" val="S3"/>
+    </comp>
+    <comp lib="0" loc="(100,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="o7"/>
+    </comp>
+    <comp lib="0" loc="(1170,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="L1"/>
+    </comp>
+    <comp lib="0" loc="(90,620)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(930,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="o3"/>
+    </comp>
+    <comp lib="0" loc="(990,330)" name="Power"/>
+    <comp lib="0" loc="(130,620)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1090,400)" name="Tunnel">
+      <a name="label" val="S2"/>
+    </comp>
+    <comp lib="0" loc="(310,580)" name="Ground"/>
+    <comp lib="0" loc="(850,90)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S2"/>
+    </comp>
+    <comp lib="0" loc="(870,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="o6"/>
+    </comp>
+    <comp lib="0" loc="(150,620)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
     <comp lib="7" loc="(60,30)" name="LCD 16x2"/>
+    <comp lib="0" loc="(1090,460)" name="Tunnel">
+      <a name="label" val="S0"/>
+    </comp>
+    <comp lib="0" loc="(510,230)" name="Ground"/>
+    <comp lib="0" loc="(970,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="o1"/>
+    </comp>
+    <comp lib="0" loc="(920,490)" name="Ground"/>
+    <comp lib="0" loc="(890,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="o5"/>
+    </comp>
+    <comp lib="0" loc="(360,220)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Wrl"/>
+    </comp>
+    <comp lib="0" loc="(920,210)" name="Ground"/>
+    <comp lib="0" loc="(1110,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="C0"/>
+    </comp>
+    <comp lib="0" loc="(1080,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="Dval"/>
+    </comp>
+    <comp lib="0" loc="(180,210)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="S2"/>
+    </comp>
+    <comp lib="0" loc="(100,460)" name="Clock"/>
+    <comp lib="0" loc="(1150,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="L0"/>
+    </comp>
+    <comp lib="5" loc="(1100,120)" name="7-Segment Display"/>
+    <comp lib="0" loc="(1090,340)" name="Tunnel">
+      <a name="label" val="S4"/>
+    </comp>
+    <comp lib="7" loc="(830,760)" name="UsbPort">
+      <a name="Server Address" val="/192.168.56.1:62843"/>
+      <a name="View Name" val="UsbPort 62843"/>
+    </comp>
+    <comp lib="0" loc="(390,230)" name="Ground"/>
+    <comp lib="0" loc="(850,70)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="0" loc="(950,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="o2"/>
+    </comp>
+    <comp lib="0" loc="(850,130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S4"/>
+    </comp>
+    <comp lib="7" loc="(270,610)" name="4x4 Matrix Keyboard"/>
+    <comp lib="0" loc="(1130,680)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="C1"/>
+    </comp>
+    <comp lib="0" loc="(420,210)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="S4"/>
+    </comp>
+    <comp lib="0" loc="(210,210)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="S3"/>
+    </comp>
+    <comp lib="0" loc="(520,530)" name="Tunnel">
+      <a name="label" val="C1"/>
+    </comp>
   </circuit>
   <circuit name="testing stuff">
     <a name="circuit" val="testing stuff"/>
@@ -1885,23 +1885,29 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1070,400)" to="(1090,400)"/>
     <wire from="(860,380)" to="(940,380)"/>
     <wire from="(980,430)" to="(1060,430)"/>
-    <comp lib="0" loc="(820,380)" name="Pin">
+    <comp lib="0" loc="(1020,400)" name="Tunnel">
+      <a name="label" val="Wrl"/>
+    </comp>
+    <comp lib="0" loc="(820,360)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="SCLK"/>
+      <a name="label" val="SS"/>
     </comp>
-    <comp lib="7" loc="(940,350)" name="ATF750c">
-      <a name="DOC file path" val="D:\ISEL\CUPL\SOC\output\SOC.doc"/>
-    </comp>
-    <comp lib="0" loc="(470,220)" name="Power"/>
     <comp lib="0" loc="(420,230)" name="Ground"/>
     <comp lib="0" loc="(120,210)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="S4"/>
     </comp>
-    <comp lib="0" loc="(390,230)" name="Ground"/>
+    <comp lib="0" loc="(360,220)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Wrl"/>
+    </comp>
     <comp lib="0" loc="(1090,370)" name="Tunnel">
       <a name="label" val="S3"/>
     </comp>
+    <comp lib="7" loc="(940,350)" name="ATF750c">
+      <a name="DOC file path" val="D:\ISEL\CUPL\SOC\output\SOC.doc"/>
+    </comp>
+    <comp lib="0" loc="(840,430)" name="Clock"/>
     <comp lib="0" loc="(1090,340)" name="Tunnel">
       <a name="label" val="S4"/>
     </comp>
@@ -1911,45 +1917,39 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(1090,400)" name="Tunnel">
       <a name="label" val="S2"/>
     </comp>
-    <comp lib="0" loc="(840,430)" name="Clock"/>
-    <comp lib="7" loc="(60,30)" name="LCD 16x2"/>
     <comp lib="0" loc="(510,230)" name="Ground"/>
-    <comp lib="0" loc="(1020,400)" name="Tunnel">
-      <a name="label" val="Wrl"/>
+    <comp lib="0" loc="(390,230)" name="Ground"/>
+    <comp lib="0" loc="(470,220)" name="Power"/>
+    <comp lib="0" loc="(1090,430)" name="Tunnel">
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="0" loc="(820,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SCLK"/>
+    </comp>
+    <comp lib="0" loc="(990,330)" name="Power"/>
+    <comp lib="0" loc="(920,490)" name="Ground"/>
+    <comp lib="0" loc="(1090,460)" name="Tunnel">
+      <a name="label" val="S0"/>
     </comp>
     <comp lib="0" loc="(450,230)" name="Ground"/>
-    <comp lib="0" loc="(150,210)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="S3"/>
-    </comp>
-    <comp lib="0" loc="(820,360)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SS"/>
-    </comp>
+    <comp lib="7" loc="(60,30)" name="LCD 16x2"/>
     <comp lib="0" loc="(200,280)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="S0"/>
     </comp>
-    <comp lib="0" loc="(1090,460)" name="Tunnel">
-      <a name="label" val="S0"/>
+    <comp lib="0" loc="(150,210)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="S3"/>
     </comp>
     <comp lib="0" loc="(210,210)" name="Tunnel">
       <a name="facing" val="north"/>
-      <a name="label" val="S1"/>
-    </comp>
-    <comp lib="0" loc="(990,330)" name="Power"/>
-    <comp lib="0" loc="(1090,430)" name="Tunnel">
       <a name="label" val="S1"/>
     </comp>
     <comp lib="0" loc="(180,210)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="S2"/>
     </comp>
-    <comp lib="0" loc="(360,220)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Wrl"/>
-    </comp>
-    <comp lib="0" loc="(920,490)" name="Ground"/>
     <comp lib="0" loc="(820,400)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="DATA"/>
