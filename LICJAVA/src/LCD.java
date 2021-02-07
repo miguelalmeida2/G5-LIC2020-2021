@@ -30,7 +30,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     public static void main(String[] args) {
         HAL.init();
         init();
-        write(" R");
+        write(" Rei");
         /*write(" Roulette Game ");*/
 
     }
