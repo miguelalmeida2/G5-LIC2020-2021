@@ -5,18 +5,14 @@ UsbPort = UsbPort
 # Generic modules to activate from Simulator
 kbd  = Keyboard("123456789*0#",4,3,0)
 lcd  = LCD
-m    = Switch ; "manut" ; setLabel("M")
 d7   = D7Seg
+m    = Switch ; "manut" ; setLabel("M")
 
 # Costume modules from roulettegame package
 kb  = KeyBuffer
-sr = SerialReceiverParity(6)
-dp  = Dispatcher
 rds7 = RouletteDisplay
-ca = CoinAcceptor ; "Acceptor"
 
 ## --- Project Links ---
-
 # --------------------------------------
 # KeyBoard Reader
 # --------------------------------------
@@ -32,28 +28,17 @@ kb.Dval -> UsbPort.I4
 UsbPort.O7 -> kb.ACK
 
 # --------------------------------------
-# Serial Output Controller
-# --------------------------------------
-UsbPort.O3 -> sr.SS
-UsbPort.O1 -> sr.SDX
-UsbPort.O2-> sr.SCLK
-dp.done -> sr.accept
-
-# --------------------------------------
 # LCD
 # --------------------------------------
-dp.D[1-4] -> lcd.D[4-7]
-dp.D0 -> lcd.rs
-dp.WrL -> lcd.e
-sr.DXval -> dp.Dval
-sr.D[1-5] -> dp.I[0-4]
-sr.D0 -> dp.LnD
+UsbPort.O[0-3]-> lcd.D[4-7]
+UsbPort.O4 -> lcd.rs
+UsbPort.O5 -> lcd.e
 
 # --------------------------------------
 # Roulette Display
 # --------------------------------------
-rds7.in[0-4] -> sr.D[1-5]
-rds7.wr -> dp.WrD
+rds7.in[0-4] -> UsbPort.O[0-4]
+rds7.wr -> UsbPort.O6
 0 -> rds7.ph
 
 # --------------------------------------
@@ -66,12 +51,6 @@ d7.d -> rds7.dec3
 d7.e -> rds7.dec4
 d7.f -> rds7.dec5
 d7.g -> rds7.dec6
-
-# --------------------------------------
-# Coin Acceptor
-# --------------------------------------
-UsbPort.O6 -> ca.accept
-ca.Coin -> UsbPort.I6
 
 # --------------------------------------
 # Manut
