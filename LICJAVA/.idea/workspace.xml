@@ -20,16 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.xtext.builder/builder.state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICCUPL/RouletteDisplay/src/rouletteDisplay.pld" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Roulette_Stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Roulette_Stats.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simul.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Simul.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USB_PORT.properties" beforeDir="false" afterPath="$PROJECT_DIR$/USB_PORT.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/LCD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/RouletteGameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/RouletteGameApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/SerialEmitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SerialEmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SerialEmitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICLOGISIM/LICRouletteDisplay.circ" beforeDir="false" afterPath="$PROJECT_DIR$/../LICLOGISIM/LICRouletteDisplay.circ" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,19 +108,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RouletteGameApp" />
@@ -133,7 +118,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -161,21 +146,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RouletteGameApp.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RouletteGameApp.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

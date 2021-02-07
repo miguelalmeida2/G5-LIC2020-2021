@@ -6,4 +6,8 @@
 			<item value="ps.edu.cupl.ui.category"/>
 		</list>
 	</section>
+	<section name="ImportExportAction">
+	</section>
+	<section name="FileSystemImportWizard">
+	</section>
 </section>
