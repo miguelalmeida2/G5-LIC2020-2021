@@ -2,13 +2,10 @@ import java.util.ArrayList;
 
 class Statistics {
 
-
     private final static String STATISTICSFILENAME = "Statistics.txt";
     private final static String ROULETTE_STATSFILENAME = "Roulette_Stats.txt";
     static int games;
     static int coins;
-    private static String betsWon = "";
-    private static String betsWonValue = "";
 
     public static void init(){
         load();
@@ -35,7 +32,6 @@ class Statistics {
     //Carrega estatisticas a partir de um ficheiro
     private static void load(){
         clear();
-
         ArrayList<String> SL=FileAccess.load(STATISTICSFILENAME,2);
         if (SL.size()>=2) {
             games = Integer.parseInt(SL.get(0) );
@@ -43,9 +39,9 @@ class Statistics {
         }
         ArrayList<String> RSL = FileAccess.load(ROULETTE_STATSFILENAME,10);
         for(int i = 0; i < 10; i++){
-            betsWon = "" + RSL.get(i).charAt(2);
+            String betsWon = "" + RSL.get(i).charAt(2);
             RouletteGameApp.betsWon[i] = Integer.parseInt(betsWon);
-            betsWonValue = "" + RSL.get(i).charAt(4);
+            String betsWonValue = "" + RSL.get(i).charAt(4);
             RouletteGameApp.betsWonValue[i] = Integer.parseInt(betsWonValue);
         }
     }
@@ -62,4 +58,5 @@ class Statistics {
             RSL.add(""+ i +";" + RouletteGameApp.betsWon[i] + ";" + RouletteGameApp.betsWonValue[i]);
         FileAccess.save(ROULETTE_STATSFILENAME,RSL);
     }
+
 }

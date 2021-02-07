@@ -14,7 +14,7 @@ public class HAL {
 
     // Retorna true se o bit tiver o valor lógico ‘1’
     public static boolean isBit(int mask){
-        return readBits(mask) !=0;
+        return readBits(mask) != 0;
     }
 
     // Retorna os valores dos bits representados por mask presentes no UsbPort

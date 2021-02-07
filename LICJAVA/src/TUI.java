@@ -2,6 +2,13 @@ public class TUI {
 
     private static final int OFFSET = -1;
 
+    public static void main(String[] Args){
+        HAL.init();
+        LCD.init();
+        init();
+        write("test");
+    }
+
     public static void init(){
         //grava carateres especiais
         LCD.saveCustomChar(0);
@@ -48,4 +55,5 @@ public class TUI {
     public static void displayCursor(boolean cursor){
         LCD.displayCursor(cursor);
     }
+
 }

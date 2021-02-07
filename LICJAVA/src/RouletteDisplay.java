@@ -1,20 +1,14 @@
 import java.lang.Math;
 import isel.leic.utils.*;
 
-// Controla o Roulette Display.
-public class RouletteDisplay {
+public class RouletteDisplay { // Controla o Roulette Display.
 
     private static final int MAX_ANIMATION_TIME_ROTATINGSEGMENT = 15;
     private static final int MIN_ANIMATION_TIME_ROTATINGSEGMENT = 5;
-    private static final int MAX_ANIMATION_TIME_ROTATINGNUMBERS = 15;
-    private static final int MIN_ANIMATION_TIME_ROTATINGNUMBERS = 5;
-    private static final int LAST_NUMBER_SHOW_TIME = 5;
-    private static final int LASTBUTONE_NUMBER_SHOW_TIME = 2;
 
     private static final int WR_BIT = 0x40;
     private static final int ANIM_BIT = 0x0a;
     private static final int DISPLAY_OFF = 0x1c;
-
     private static final int WAIT_TIME = 300;
     private static final int WAIT_TIME_NUMBER = 200;
     private static final int WAIT_TIME_HALF_SECOND = 500;
@@ -26,12 +20,7 @@ public class RouletteDisplay {
     public static void main(String[] args) {
         HAL.init();
         init();
-        showNumber(1);
-        clearDisplay();
-        showNumber(5);
-        clearDisplay();
-        showNumber(9);
-        //animationRotatingSegment();
+        animationRotatingNumbers(7);
     }
     // Inicia a classe, estabelecendo os valores iniciais.
     public static void init() {
@@ -39,7 +28,7 @@ public class RouletteDisplay {
     }
 
     // Envia comando para apresentar o número sorteado
-    public static void showNumber(int number) {
+    private static void showNumber(int number) {
         if (SERIAL_INTERFACE){
             SerialEmitter.send(SerialEmitter.Destination.RDisplay, number);
         }else {
@@ -85,7 +74,7 @@ public class RouletteDisplay {
         }
     }
 
-    public static void showNumberAnim(int number,int time){
+    private static void showNumberAnim(int number,int time){
         showNumber(number);
         Time.sleep(time);
     }
@@ -102,7 +91,5 @@ public class RouletteDisplay {
     public static void clearDisplay(){
         showNumber(DISPLAY_OFF);
     }
-
-
 
 }
