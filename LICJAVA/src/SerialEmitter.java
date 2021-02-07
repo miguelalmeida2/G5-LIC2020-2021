@@ -26,14 +26,14 @@ public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
         HAL.clrBits(SDX_MASK);
 
         for (int i = 0; i < 5; ++i){
-            value = SDX & 0x10;
-            if (value == 0x10){
+            value = SDX & 0x01;
+            if (value == 0x01){
                 HAL.setBits(SDX_MASK);
                 ++p;
             }
             SCLK();
             HAL.clrBits(SDX_MASK);
-            SDX = SDX << 1;
+            SDX = SDX >> 1;
         }
 
         if ( p % 2 != 0) HAL.setBits(SDX_MASK);
