@@ -1,3 +1,5 @@
+import isel.leic.utils.Time;
+
 import java.lang.Math;
 
 public class RouletteGameApp {
@@ -9,7 +11,8 @@ public class RouletteGameApp {
     private static final int MAINTENANCE_COINS = 100;
 
     private static final int MAINTENANCE_BUTTON = 0x80;
-
+    static int[] betsWon = {0,0,0,0,0,0,0,0,0,0};
+    static  int[] betsWonValue = {0,0,0,0,0,0,0,0,0,0};
     private static final int[] currentBets = {0,0,0,0,0,0,0,0,0,0};
     public static final String[] KEYOPTIONS = {"0-Stats #-Count ", "*-Play  8-ShutD "};
 
@@ -31,6 +34,7 @@ public class RouletteGameApp {
         LCD.init();
         RouletteDisplay.init();
         TUI.init();
+        //Statistics.init(); // Load's previous Statistics from Statistics.txt file
     }
 
     public static int[] specialChar =
@@ -160,12 +164,16 @@ public class RouletteGameApp {
 
     public static void maintenanceOptions(char pressed){
         if(pressed == '0') {
-
-            //TO DO
+            TUI.clearScreen();
+           // TODO
+            M.maintenanceMenu();
 
         }else if(pressed == '#'){
-
-            //TO DO
+            TUI.clearScreen();
+            // TUI.write("Games: " + Statistics.getGames(),0,0);
+            //TUI.write("Coins: " + Statistics.getCoins(),1,0);
+            char key = KBD.waitKey(WAIT_TIME_5SEC);
+            M.maintenanceMenu();
 
         }else if(pressed == '*') gameRotation(true);
         else if(pressed == '8') shutdownMenu();
@@ -178,9 +186,8 @@ public class RouletteGameApp {
         TUI.write("5-Yes  other-No ",1,0);
         char key = KBD.waitKey(WAIT_TIME_5SEC);
         if (key == '5') {
+            //Statistics.save();  //Saves scores and stats to Statistics.txt file
             System.exit(0);
-
-            //save scores and stats here
 
         }M.maintenanceMenu();
     }
