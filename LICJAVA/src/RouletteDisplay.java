@@ -24,7 +24,6 @@ public class RouletteDisplay {
     private static final boolean SERIAL_INTERFACE = true;    // Define se a interface com o LCD é série ou paralela
 
     public static void main(String[] args) {
-
         HAL.init();
         init();
         showNumber(1);
