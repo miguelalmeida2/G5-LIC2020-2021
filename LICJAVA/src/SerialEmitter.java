@@ -16,19 +16,24 @@ public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
         init();
         int p = 0;
         int value;
-        int LnD = (addr.ordinal() == Destination.RDisplay.ordinal()) ? 0x00 : 0x01;
-        SDX = (data << 1) | LnD;
-
+        SDX = data;
         HAL.setBits(SOCSEL_MASK);
-        for (int i = 0; i <= 5; ++i){
-            value = SDX & 0x01;
-            if (value == 0x01){
+        if (addr.ordinal() == Destination.LCD.ordinal()){
+            HAL.setBits(SDX_MASK);
+            ++p;
+        }
+        SCLK();
+        HAL.clrBits(SDX_MASK);
+
+        for (int i = 0; i < 5; ++i){
+            value = SDX & 0x10;
+            if (value == 0x10){
                 HAL.setBits(SDX_MASK);
                 ++p;
             }
             SCLK();
             HAL.clrBits(SDX_MASK);
-            SDX = SDX >> 1;
+            SDX = SDX << 1;
         }
 
         if ( p % 2 != 0) HAL.setBits(SDX_MASK);
