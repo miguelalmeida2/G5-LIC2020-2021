@@ -12,7 +12,7 @@ public class RouletteGameApp {
 
     private static final int MAINTENANCE_BUTTON = 0x80;
     static int[] betsWon = {0,0,0,0,0,0,0,0,0,0};
-    static  int[] betsWonValue = {0,0,0,0,0,0,0,0,0,0};
+    static int[] betsWonValue = {0,0,0,0,0,0,0,0,0,0};
     private static final int[] currentBets = {0,0,0,0,0,0,0,0,0,0};
     public static final String[] KEYOPTIONS = {"0-Stats #-Count ", "*-Play  8-ShutD "};
 
@@ -34,7 +34,7 @@ public class RouletteGameApp {
         LCD.init();
         RouletteDisplay.init();
         TUI.init();
-        //Statistics.init(); // Load's previous Statistics from Statistics.txt file
+        Statistics.init(); // Load's previous Statistics from Statistics.txt file
     }
 
     public static int[] specialChar =
@@ -158,27 +158,37 @@ public class RouletteGameApp {
         }
     }
 
-    public static void checkIfMaintenanceButtonOn(){ if(HAL.readBits(MAINTENANCE_BUTTON) == MAINTENANCE_BUTTON) { maintenanceOptions(M.maintenanceMenu());} }
+    public static void checkIfMaintenanceButtonOn(){
+        if(HAL.readBits(MAINTENANCE_BUTTON) == MAINTENANCE_BUTTON) { maintenanceOptions(M.maintenanceMenu());}
+    }
 
-    public static void checkIfMaintenanceButtonOff(){ if(HAL.readBits(MAINTENANCE_BUTTON) != MAINTENANCE_BUTTON) gameRotation(false); }
+    public static void checkIfMaintenanceButtonOff(){
+        if(HAL.readBits(MAINTENANCE_BUTTON) != MAINTENANCE_BUTTON) gameRotation(false);
+    }
 
     public static void maintenanceOptions(char pressed){
         if(pressed == '0') {
             TUI.clearScreen();
-           // TODO
-            M.maintenanceMenu();
-
+            int line = 1;
+            TUI.write(""+(line-1)+": -> "+betsWon[line-1]+" $:"+betsWonValue[line-1],0,0);
+            TUI.write(""+line+": -> "+betsWon[line]+" $:"+betsWonValue[line],1,0);
+            char key = KBD.waitKey(WAIT_TIME_5SEC);
+            do {
+                if(key == '2' && line > 1) --line;
+                if(key == '8' && line < 9) ++line;
+                if(key != '8' && key != '2') break;
+                TUI.write(""+(line-1)+": -> "+betsWon[line-1]+" $:"+betsWonValue[line-1],0,0);
+                TUI.write(""+line+": -> "+betsWon[line]+" $:"+betsWonValue[line],1,0);
+                key = KBD.waitKey(WAIT_TIME_5SEC);
+            }while(key != 0);
         }else if(pressed == '#'){
             TUI.clearScreen();
-            // TUI.write("Games: " + Statistics.getGames(),0,0);
-            //TUI.write("Coins: " + Statistics.getCoins(),1,0);
+            TUI.write("Games: " + Statistics.getGames(),0,0);
+            TUI.write("Coins: " + Statistics.getCoins(),1,0);
             char key = KBD.waitKey(WAIT_TIME_5SEC);
-            M.maintenanceMenu();
-
         }else if(pressed == '*') gameRotation(true);
         else if(pressed == '8') shutdownMenu();
         checkIfMaintenanceButtonOn();
-
     }
 
     private static void shutdownMenu(){
@@ -186,7 +196,7 @@ public class RouletteGameApp {
         TUI.write("5-Yes  other-No ",1,0);
         char key = KBD.waitKey(WAIT_TIME_5SEC);
         if (key == '5') {
-            //Statistics.save();  //Saves scores and stats to Statistics.txt file
+            Statistics.save();  //Saves scores and stats to Statistics.txt file
             System.exit(0);
 
         }M.maintenanceMenu();
