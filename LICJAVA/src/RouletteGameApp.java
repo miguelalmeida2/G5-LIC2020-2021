@@ -1,5 +1,3 @@
-import isel.leic.utils.Time;
-
 import java.lang.Math;
 
 public class RouletteGameApp {
@@ -22,13 +20,12 @@ public class RouletteGameApp {
 
     public static final int WAIT_TIME_5SEC = 5000; //5seg
 
-
     public static void main(String[] args){
         init();
         gameRotation(false);
     }
 
-    public static void init(){
+    private static void init(){
         HAL.init();
         KBD.init();
         LCD.init();
@@ -42,7 +39,7 @@ public class RouletteGameApp {
             0,0b00011111,0b00010101,0b00010001,0b00010101,0b00011111,0,0,   // 1
             0,0b00011111,0b00010011,0b00010101,0b00011001,0b00011111,0,0};  // 2
 
-    public static void gameRotation(boolean maintenance){
+    private static void gameRotation(boolean maintenance){
         while(true) {
             coinsAvailable = (maintenance)? MAINTENANCE_COINS : totalCoins;
             if(!maintenance){firstMenu();
@@ -73,7 +70,7 @@ public class RouletteGameApp {
         }
     }
 
-    public static void firstMenu(){
+    private static void firstMenu(){
         TUI.clearScreen();
         TUI.write(" Roulette Game  ",0,0);
         TUI.setCursor(1,0);
@@ -85,7 +82,7 @@ public class RouletteGameApp {
         TUI.write("$" + coinsAvailable);
     }
 
-    public static void betsMenu(){
+    private static void betsMenu(){
         TUI.clearScreen();
         TUI.setCursor(1,0);
         TUI.write("0123456789  ");
@@ -99,12 +96,12 @@ public class RouletteGameApp {
         updateTotalCoins();
     }
 
-    public static void rouletteRoll(){
+    private static void rouletteRoll(){
         rouletteNumber= (int)(Math.random()*(MAX_ROL_NUM - MIN_ROL_NUM +1));
         RouletteDisplay.animationRotatingSegment();
     }
 
-    public static void updateTotalCoins(){
+    private static void updateTotalCoins(){
         TUI.setCursor(1,14-TUI.digitDim(coinsAvailable));
         TUI.write(" $" + coinsAvailable);
     }
@@ -115,11 +112,11 @@ public class RouletteGameApp {
         return coinsAvailable;
     }
 
-    public static void coinPlacedOnBets(){
+    private static void coinPlacedOnBets(){
         coinsAvailable -= 1;
     }
 
-    public static void placeBet(int bet){
+    private static void placeBet(int bet){
         LCD.cursor(0,bet);
         if(bet>=0 && currentBets[bet]<MAX_BET && coinsAvailable>0){
             coinPlacedOnBets();
@@ -127,9 +124,9 @@ public class RouletteGameApp {
         }
     }
 
-    public static void clearPlacedBets(){ for(int n=0;n<=9;n++) currentBets[n] = 0; }
+    private static void clearPlacedBets(){ for(int n=0;n<=9;n++) currentBets[n] = 0; }
 
-    public static void calculateWinsAndLosses(){
+    private static void calculateWinsAndLosses(){
         int won = 0, lost = 0, coinsWonLoss;
         String winOrLoss;
         for(int n=0;n<=9;n++){
@@ -145,7 +142,7 @@ public class RouletteGameApp {
         RouletteDisplay.blinkNumber(rouletteNumber);
     }
 
-    public static char readKey(){
+    private static char readKey(){
         char key = 0;
         while (key == 0) key = KBD.getKey();
         return key;
@@ -156,7 +153,7 @@ public class RouletteGameApp {
         while (key != keyExpected) key = KBD.getKey();
     }
 
-    public static void waitforPlay(){
+    private static void waitforPlay(){
         char key = 0;
         while (key != '*'){
             if (CoinAcceptor.checkForInsertedCoin()) addCoin();
@@ -165,7 +162,7 @@ public class RouletteGameApp {
         }
     }
 
-    public static void checkIfMaintenanceButtonOn(){
+    private static void checkIfMaintenanceButtonOn(){
         if(HAL.readBits(MAINTENANCE_BUTTON) == MAINTENANCE_BUTTON) { maintenanceOptions(M.maintenanceMenu());}
     }
 
@@ -173,7 +170,7 @@ public class RouletteGameApp {
         if(HAL.readBits(MAINTENANCE_BUTTON) != MAINTENANCE_BUTTON) gameRotation(false);
     }
 
-    public static void maintenanceOptions(char pressed){
+    private static void maintenanceOptions(char pressed){
         if(pressed == '0') {
             TUI.clearScreen();
             int line = 1;

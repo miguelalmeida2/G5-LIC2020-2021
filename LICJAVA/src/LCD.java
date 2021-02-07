@@ -6,34 +6,28 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
     private static final int NIBBLE_SIZE = 4, BYTE_SIZE = 8;
     public static final int NIBBLE_MASK = 0x0f, NIBBLE_MASK_SIZE = 0x10;
 
-
     private static final int FUNCTION_SET_TO8BIT = 0x03, FUNCTION_SET_TO4BIT = 0x02;
-
     private static final int FUNCTION_SET_2LINES = 0x28;
     private static final int DISPLAY_OFF = 0x08;
     private static final int CLEAR_DISPLAY = 0x01;
     private static final int ENTRY_MODE_SET_DIR_RIGHT = 0x06;
     private static final int SET_CGRAM_ADRESS = 0x40;
-
     private static final int FIRST_INIT_TIME = 15, SECOND_INIT_TIME = 5, THIRD_INIT_TIME = 1, WRITEBYTE_SLEEP_TIME = 10;
-
     private static final int LINE0 = 0x00, LINE1 = 0x40;
-
     private static final int CURSOR_ON = 0x0f, DISPLAY_ON = 0x0f;
     private static final int CURSOR_OFF = 0x0c;
-
     private static final int TIME_TO_WRITE_EACH_CHAR_ANIMATION = 25;
 
-    private static final boolean SERIAL_INTERFACE = true;    // Define se a interface com o LCD é série ou paralela
+    // Define se a interface com o LCD é série ou paralela
+    private static final boolean SERIAL_INTERFACE = true;
 
-    // Envia a sequência de iniciação para comunicação a 4 bits.
     public static void main(String[] args) {
         HAL.init();
         init();
-        write(" Rei");
-        /*write(" Roulette Game ");*/
-
+        write(" Roulette Game ");
     }
+
+    // Envia a sequência de iniciação para comunicação a 4 bits.
     public static void init() {
         Time.sleep(FIRST_INIT_TIME);
         writeNibble(false,FUNCTION_SET_TO8BIT);
@@ -51,11 +45,8 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
 
     // Escreve um nibble de comando/dados no LCD em paralelo
     private static void writeNibbleParallel(boolean rs, int data) {
-        if(rs){
-            HAL.writeBits(NIBBLE_MASK_SIZE,0x10);
-        }else{
-            HAL.writeBits(NIBBLE_MASK_SIZE,0);
-        }
+        if(rs) HAL.writeBits(NIBBLE_MASK_SIZE,0x10);
+        else HAL.writeBits(NIBBLE_MASK_SIZE,0);
         HAL.writeBits(0x20,0x20);
         HAL.writeBits(NIBBLE_MASK,data);
         HAL.writeBits(0x20,0);
@@ -71,8 +62,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
 
     // Escreve um nibble de comando/dados no LCD
     private static void writeNibble(boolean rs, int data) {
-        if(!SERIAL_INTERFACE)
-            writeNibbleParallel(rs,data);
+        if(!SERIAL_INTERFACE) writeNibbleParallel(rs,data);
         else writeNibbleSerial(rs,data);
     }
 
@@ -125,9 +115,7 @@ public class LCD { // Escreve no LCD usando a interface a 4 bits.
         }
     }
 
-    public static void customChar(int charNum){
-        writeByte(true,charNum);
-    }
+    public static void customChar(int charNum){ writeByte(true,charNum); }
 
     public static void customChar(int charNum,int line,int col){
         cursor(line,col);

@@ -1,18 +1,12 @@
 public class M {
 
-    public static void main(String[] args) {
-
-    }
-
     public static char maintenanceMenu() {
         RouletteGameApp.checkIfMaintenanceButtonOff();
-
         char pressed = '?';
         boolean b = false;
         int c = 1;
         TUI.clearScreen();
         TUI.write(" On Maintenance ");
-
         while (pressed != '0' & pressed != '#' & pressed != '*' & pressed != '8'){
             RouletteGameApp.checkIfMaintenanceButtonOff();
             int i = b ? 1 : 0;
@@ -21,6 +15,5 @@ public class M {
             b = !b;
         }return pressed;
     }
-
 
 }

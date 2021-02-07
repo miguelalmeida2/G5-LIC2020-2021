@@ -20,14 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/.plugins/org.eclipse.xtext.builder/builder.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICCUPL/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../LICCUPL/.metadata/version.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICCUPL/RouletteDisplay/src/rouletteDisplay.pld" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USB_PORT.properties" beforeDir="false" afterPath="$PROJECT_DIR$/USB_PORT.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HAL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/M.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RouletteDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RouletteGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteGameApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SerialEmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SerialEmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,5 +149,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1612739207089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612739207089" />
+    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1612739207089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612739207089" />
+    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1612739207089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612739207089" />
+    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1612739207089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612739207089" />
   </component>
 </project>
