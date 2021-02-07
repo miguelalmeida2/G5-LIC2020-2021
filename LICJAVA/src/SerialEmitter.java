@@ -2,7 +2,6 @@
 
 public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
     public enum Destination {RDisplay,LCD};
-    private static int SDX;
     private static final int SOCSEL_MASK = 0x08;
     private static final int SDX_MASK = 0x02;
     private static final int CLOCK_MASK = 0x04;
@@ -16,7 +15,7 @@ public class SerialEmitter { // Envia tramas para o módulo Serial Receiver.
         init();
         int p = 0;
         int value;
-        SDX = data;
+        int SDX = data;
         HAL.setBits(SOCSEL_MASK);
         if (addr.ordinal() == Destination.LCD.ordinal()){
             HAL.setBits(SDX_MASK);

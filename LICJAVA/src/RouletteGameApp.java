@@ -16,7 +16,7 @@ public class RouletteGameApp {
     private static final int[] currentBets = {0,0,0,0,0,0,0,0,0,0};
     public static final String[] KEYOPTIONS = {"0-Stats #-Count ", "*-Play  8-ShutD "};
 
-    private static int totalCoins = 10;
+    private static int totalCoins = 0;
     private static int coinsAvailable = 0;
     private static int rouletteNumber;
 
@@ -46,8 +46,11 @@ public class RouletteGameApp {
         while(true) {
             coinsAvailable = (maintenance)? MAINTENANCE_COINS : totalCoins;
             if(!maintenance){firstMenu();
-            while (coinsAvailable == 0) ;
+            while (coinsAvailable == 0){
+                if (CoinAcceptor.checkForInsertedCoin()) addCoin();
+            }
                 waitforPlay();
+
             }
             betsMenu();
             char currentKey;
@@ -55,6 +58,7 @@ public class RouletteGameApp {
                 currentKey = readKey();
                 placeBet(currentKey - '0');
                 updateTotalCoins();
+
                 if (currentKey == '#') {
                     rouletteRoll();
                     RouletteDisplay.animationRotatingNumbers(rouletteNumber);
@@ -106,7 +110,9 @@ public class RouletteGameApp {
     }
 
     public static int addCoin() {
-        return totalCoins += COIN_VALUE;
+        coinsAvailable += COIN_VALUE;
+        updateTotalCoins();
+        return coinsAvailable;
     }
 
     public static void coinPlacedOnBets(){
@@ -153,6 +159,7 @@ public class RouletteGameApp {
     public static void waitforPlay(){
         char key = 0;
         while (key != '*'){
+            if (CoinAcceptor.checkForInsertedCoin()) addCoin();
             key = KBD.getKey();
             checkIfMaintenanceButtonOn();
         }
