@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae8b65cb-a905-42fa-bb5b-075e1148101a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LICCUPL/KeyBoard Reader/output/template.doc_logisim.circ" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USB_PORT.properties" beforeDir="false" afterPath="$PROJECT_DIR$/USB_PORT.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/KBD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/M.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/M.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LICJAVA/RouletteGameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LICJAVA/RouletteGameApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RouletteGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteGameApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICLOGISIM/LICRouletteDisplay.circ" beforeDir="false" afterPath="$PROJECT_DIR$/../LICLOGISIM/LICRouletteDisplay.circ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouletteGame.simul" beforeDir="false" afterPath="$PROJECT_DIR$/RouletteGame.simul" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,25 +141,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1612639432851">
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1612639610662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639432851" />
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639610662" />
     <state width="916" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612636897688" />
-    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1612639432851">
+    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1612639610662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639432851" />
+    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639610662" />
     <state width="916" height="310" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612636897688" />
-    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1612639432851">
+    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1612639610662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639432851" />
+    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639610662" />
     <state width="916" height="310" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612636897688" />
-    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1612639432851">
+    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1612639610662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639432851" />
+    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612639610662" />
     <state width="916" height="310" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1612636897688" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1612635968348">
       <screen x="1920" y="0" width="1280" height="984" />
