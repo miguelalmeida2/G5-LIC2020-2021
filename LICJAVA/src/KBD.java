@@ -5,7 +5,6 @@ public class KBD { // Ler teclas. Métodos retornam ‘0’..’9’,’#’,’
     private final static int KBD_MASK = 0x0F;  // 0000 1111
     private final static char[] keyboard = {'1','4','7','*','2','5','8','0','3','6','9','#'};
 
-
     public static void main(String[] args) {
         HAL.init();
         init();

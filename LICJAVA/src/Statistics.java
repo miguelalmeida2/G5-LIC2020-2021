@@ -39,7 +39,9 @@ class Statistics {
         }
         ArrayList<String> RSL = FileAccess.load(ROULETTE_STATSFILENAME,10);
         for(int i = 0; i < 10; i++){
+            //if(RSL.get(i).length())
             String betsWon = "" + RSL.get(i).charAt(2);
+
             RouletteGameApp.betsWon[i] = Integer.parseInt(betsWon);
             String betsWonValue = "" + RSL.get(i).charAt(4);
             RouletteGameApp.betsWonValue[i] = Integer.parseInt(betsWonValue);

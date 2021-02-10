@@ -64,28 +64,30 @@
       (Path "Design Resources")
       (Path "Design Resources" ".\lic.dsn")
       (Path "Design Resources" ".\lic.dsn" "SCHEMATIC1")
-      (Path "Design Resources" ".\lic.dsn" "Design Cache"))
+      (Path "Design Resources" ".\lic.dsn" "Design Cache")
+      (Select "Design Resources" ".\lic.dsn" "SCHEMATIC1"
+         "Jogo Roleta Paralelo"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 254 0 461"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 254 0 461"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 104 1737 104 604")
-        (Scroll "-307 0")
-        (Zoom "100")
+        (Scroll "0 677")
+        (Zoom "192")
         (Occurrence "/"))
       (Path "C:\USERS\TIAGO\DESKTOP\GIT\G5-LIC2020-2021\LICORCAD\LIC.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "Jogo Roleta"))
+      (Page "Jogo Roleta Paralelo"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 26 1371 26 530")
-        (Scroll "-163 0")
+        (Placement "44 2 3 -1 -1 -8 -31 26 1371 26 530")
+        (Scroll "-434 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path "C:\USERS\TIAGO\DESKTOP\GIT\G5-LIC2020-2021\LICORCAD\LIC.DSN")
