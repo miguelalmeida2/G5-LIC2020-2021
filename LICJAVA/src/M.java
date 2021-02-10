@@ -2,7 +2,7 @@ public class M {
 
     public static char maintenanceMenu() {
         RouletteGameApp.checkIfMaintenanceButtonOff();
-        char pressed = '?';w
+        char pressed = '?';
         boolean b = false;
         int c = 1;
         TUI.clearScreen();
