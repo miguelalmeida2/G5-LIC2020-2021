@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.nio.file.attribute.UserDefinedFileAttributeView;
 
 public class RouletteGameApp {
 
@@ -35,9 +36,9 @@ public class RouletteGameApp {
     }
 
     public static int[] specialChar =
-            {0,0b00011111,0b00010001,0b00010101,0b00010001,0b00011111,0,0,  // 0
-            0,0b00011111,0b00010101,0b00010001,0b00010101,0b00011111,0,0,   // 1
-            0,0b00011111,0b00010011,0b00010101,0b00011001,0b00011111,0,0};  // 2
+            {0,0b00011111,0b00010001,0b00010101,0b00010001,0b00011111,0,0,   // 0
+             0,0b00011111,0b00010101,0b00010001,0b00010101,0b00011111,0,0,   // 1
+             0,0b00011111,0b00010011,0b00010101,0b00011001,0b00011111,0,0};  // 2
 
     private static void gameRotation(boolean maintenance){
         while(true) {

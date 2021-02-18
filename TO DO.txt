@@ -1,0 +1,22 @@
+Relatório
+- Corrigir texto
+- Corrigir imagens e referencias
+- ASM charts
+
+Teclado
+- Limpar Varrimento que grava 2 teclas (caso em que guarda teclas quando  coins=0)
+
+Método bet
+-só remover moeda se a tecla premida for correspondente a um número
+
+Stats
+- Corrigir e optimizar
+- Não grava estatisticas no ficheiro
+
+Serial Emitter
+- Remover os 3 clears do Serial Emitter, o SDX não deve oscilar
+- Remover Contra-Clock
+- ckmux Shift register
+
+ORCAD
+- remover USB port deixar apenas bridges não pareadas para entrada no USB port
